@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="grids.css">
+    <link rel="stylesheet" href="navbar.css">
+
+
+</head>
+<body>
+
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close"  onclick="close_modal()">&times;</span>
+      <h1 class="invert"  onclick="toogle_invert()">Invert color</h1>
+      <div class="modalgrid">
+            <div class="modalcolor"></div>
+            <div class="modalcolor"></div>
+            <div class="modalcolor"></div>
+            <div class="modalcolor"></div>
+            <div class="modalcolor"></div>
+            <div class="modalcolor"></div>
+            <div class="modalcolor"></div>
+            <div class="modalcolor"></div>
+
+      </div>
+    </div>
+</div>
+
+    
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <div class="overlay-content">
+        <div  class="slidebox" >
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+        <div class="grid-container">
+            <div class="gridbox">
+                <div class="flex1 leftflex"  onclick="theme_set(0)" >Home</div>
+                <div  class="flex2 rightflex" onclick="theme_set(1)" >About</div>
+            </div>
+            <div class="gridbox">
+                <div class="flex2 leftflex" >Skills</div>
+                <div  class="flex1 rightflex" >Projects</div>
+            </div>
+            <div class="gridbox">
+                <div class="flex1 leftflex" >Experience</div>
+                <div  class="flex2 rightflex" >Achivements</div>
+            </div>
+            <div class="gridbox">
+                <div class="flex2 leftflex"  onclick="open_modal()">Themes</div>
+                <div  class="flex1 rightflex" >Contact me</div>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+
+<div class="aurora-outer">
+    <div class="aurora-inner"> </div>
+   
+</div>
+      
+<div class="pages">
+    <h1 class="menu" onclick="openNav()"> <span class="ham">&#9776;</span> Menu <span class="ham">&#9776;</span></h1>
+    <section class="card-container">
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+        <div class="card" >
+            Hello
+        </div>
+
+    </section>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

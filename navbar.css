@@ -243,14 +243,15 @@
   top: 140px;
 	align-items: start;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 120px);
-  grid-template-rows: repeat(auto-fit, 120px);
+	grid-template-columns: repeat(auto-fit, 100px);
+  grid-template-rows: repeat(auto-fit, 100px);
+  grid-gap: 4px;
 }
 .modalcolor{
-  height: 85px;
-  width: 85px;
+  height: 75px;
+  width: 75px;
   border-radius: 100%;
-  border: 15px solid var(--dark);
+  border: 10px solid var(--dark);
 
 }
 

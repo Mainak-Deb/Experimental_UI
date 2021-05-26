@@ -9,7 +9,7 @@
     left: 0;
     background-color: rgba(255,255,255,0);
     backdrop-filter: blur(.8rem);
-    overflow-y: hidden;
+    overflow-y: scroll;
     transition: 1s;
   }
   
@@ -62,7 +62,8 @@
   transform: translate(-50%);
   background-color:  var(--light2);
   border-radius: 30px;
-
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 }
 
 .slidecontainer {
@@ -79,10 +80,14 @@
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .slider:hover {
   opacity: 1;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .slider::-webkit-slider-thumb {
@@ -120,23 +125,23 @@
     height: 120px;
     /* border: 1px solid rgb(0, 0, 0); */
     display: flex;
-    font-size: 30px;
+    font-size:18px;
     text-align: center;
-    margin-top: 25px;
-    font-size: 25px;
-    
+    margin-top: 4px;
 }
 .flex1{
     background-color: var(--mid);
-    height: 80px;
-    border-radius: 40px;
-    
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .flex2{
   background-color: var(--dark2);
-  border-radius: 40px;
-  height: 80px;
+  border-radius: 30px;
+  height: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -144,6 +149,8 @@
 {
   background-color: var(--dark);
   color: var(--theme);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
 
 }
 
@@ -151,17 +158,19 @@
 {
   background-color: var(--dark);
   color: var(--theme);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
 
 }
 
 .leftflex{
-  margin-right:20px ;
-  padding-top: 40px;
+  margin-right:10px ;
+  padding-top: 30px;
 }
 
 .rightflex{
-  margin-left: 0px;
-  padding-top: 40px;
+  margin-left: 10px;
+  padding-top:30px;
 }
 
 
@@ -176,20 +185,22 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  backdrop-filter: blur(.6rem);
+  background-color: rgb(80, 80, 80); /* Fallback color */
+  background-color: rgba(32, 32, 32, 0.4); /* Black w/ opacity */
+  backdrop-filter: blur(.8rem);
 }
 
 /* Modal Content */
 .modal-content {
   background-color: var(--theme);
+  backdrop-filter: blur(20px);
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 60%;
   height: 60%;
   overflow-y: scroll;
+  border-radius: 40px;
   
 
 }
@@ -226,7 +237,7 @@
 .modalgrid {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-45%);
   width: 90%;
   height: 77%;
   top: 140px;
@@ -247,7 +258,31 @@
   .modalgrid {
     width: 45%;
   }
+  .gridbox{
+    font-size: 35px;
+    margin-top: 25px;
+  }
+  .flex1{
+    border-radius: 40px;
+    height: 80px;
+  }
+  .flex2{
+    border-radius: 40px;
+    height: 80px;
+  }
+  .leftflex{
+    margin-right:20px ;
+    padding-top: 40px;
+  }
+  .rightflex{
+    margin-right:20px ;
+    padding-top: 40px;
+  }
+
 }
 
-
+.navicon{
+  color: var(--theme);
+  font-size: 20px;
+}
 

@@ -13,7 +13,6 @@ body{
     --dark2:#B5838D;
     --light2:#FFB4A2;
     --mid:#E5989B;
-     filter: invert(100%);
 }
 .aurora-outer {
     position: fixed;

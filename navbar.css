@@ -243,9 +243,9 @@
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .modalgrid {
-    width: 35%;
+    width: 45%;
   }
 }
 

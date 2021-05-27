@@ -178,3 +178,21 @@ updateCounter();
     var date= d.getDate();
     document.getElementById("day").innerHTML = day;
     document.getElementById("date").innerHTML = date;
+
+
+document.getElementById("colr1").value =  colors[parseInt(col)][0];
+document.getElementById("colr2").value =  colors[parseInt(col)][1];
+document.getElementById("colr3").value =  colors[parseInt(col)][2];
+document.getElementById("colr4").value =  colors[parseInt(col)][3];
+document.getElementById("colr5").value =  colors[parseInt(col)][4];
+document.getElementById("colr6").value =  colors[parseInt(col)][5];
+
+function customcol(){
+  thm.style.setProperty('--theme', document.getElementById("colr1").value);
+  thm.style.setProperty('--light',  document.getElementById("colr2").value); 
+  thm.style.setProperty('--light2', document.getElementById("colr3").value);
+  thm.style.setProperty('--mid',    document.getElementById("colr4").value);
+  thm.style.setProperty('--dark2', document.getElementById("colr5").value );
+  thm.style.setProperty('--dark',   document.getElementById("colr6").value);
+}
+

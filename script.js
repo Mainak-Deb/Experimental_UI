@@ -35,7 +35,11 @@ slider.oninput = function() {
 
 }
 
+
 var thm = document.querySelector(':root');
+var country=document.getElementById("country");
+var meimg=document.getElementById("mepic");
+
 var invert =false;
 var col=0;
 
@@ -43,9 +47,15 @@ function toogle_invert(){
   if(invert==false){
     invert=true;
     thm.style.setProperty('filter',  'invert(100%)');
+    meimg.style.setProperty('filter',  'invert(100%)');
+    country.style.setProperty('filter',  'invert(100%)');
+
   }else{
     invert=false;
     thm.style.setProperty('filter',  'invert(0%)');
+    meimg.style.setProperty('filter',  'invert(0%)');
+    country.style.setProperty('filter',  'invert(0%)');
+
   }
   console.log(invert);
 }

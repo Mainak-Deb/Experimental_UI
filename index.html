@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="color.css">
     <link rel="stylesheet" href="grids.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -116,72 +118,85 @@
 
 <div class="aurora-outer">
     <div class="aurora-inner"> </div>
-   
 </div>
-      
+     
 <div class="pages">
-    <h1 class="menu" onclick="openNav()"> <span class="ham">&#9776;</span> Menu <span class="ham">&#9776;</span></h1>
+    <h1 class="menu" onclick="openNav()"> <span class="ham1">&#9776;</span>  <span id="menu">Menu</span> <span class="ham2">&#9776;</span></h1>
+
     <section class="card-container">
-        <div class="card" >
-            Hello
+        <div class="card" id="picture">              
+            <img src="images\mainak.png" alt="Mainak Deb" class="mypic" id="mepic">
+        </div>
+        <div class="card" id="names">
+            <h1 id="myname">Mainak Deb</h1>
+            <div id="country">Indian </div>
+            <div class="iam" >
+                <span style="color: rgba(53, 236, 16, 0.986);">$  </span>
+                <span class="typing" ></span>
+            </div>
+            
+                        
+            <div id="languages">
+                <span style="color: rgba(3, 28, 75, 0.986);">$  </span>
+                <span style="color: rgba(5, 5, 5, 0.986);"><b>Languages</b></span>
+                <span style="color: rgba(5, 110, 1, 0.986);">=</span>
+                <span>[ Bengali, </span>
+                <span>English, </span>
+                <span>Hindi ] </span>
+            </div>
+            <div id="hireme">
+                <button class="button">Hire me</button>
+            </div>
         </div>
         <div class="card" >
-            Hello
+            3
         </div>
         <div class="card" >
-            Hello
+            4
         </div>
         <div class="card" >
-            Hello
+            5
         </div>
         <div class="card" >
-            Hello
+            6
         </div>
         <div class="card" >
-            Hello
+           7
         </div>
         <div class="card" >
-            Hello
+            8
         </div>
         <div class="card" >
-            Hello
+           9
         </div>
         <div class="card" >
-            Hello
+            10
         </div>
         <div class="card" >
-            Hello
+            11
         </div>
         <div class="card" >
-            Hello
+           12
         </div>
-        <div class="card" >
-            Hello
-        </div>
-        <div class="card" >
-            Hello
-        </div>
-        <div class="card" >
-            Hello
-        </div>
-        <div class="card" >
-            Hello
-        </div>
-        <div class="card" >
-            Hello
-        </div>
-        <div class="card" >
-            Hello
-        </div>
-        <div class="card" >
-            Hello
-        </div>
-        <div class="card" >
-            Hello
-        </div>
+        
 
     </section>
 </div>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+<script>
+    let typed = new Typed(".typing", {
+        strings: ["Hi,"," I am a CS sudent.", "I am a competative programer.", 
+        "A Web dev enthisiast.", "A Photography & Art lover.",
+        "I love explore new thintgs","I love creating tech projects","Thanks!"],
+        typeSpeed: 100,
+    backSpeed: 60,
+        smartBackspace: true, // this is a default
+        loop: true
+  });
+  
+    
+
+</script>
 </body>
 </html>

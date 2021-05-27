@@ -1,10 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    
-}
-body{
-    
+    font-family: 'Balsamiq Sans', cursive;
 }
 :root {
     --theme:#f8f2f2; 

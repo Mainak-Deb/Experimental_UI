@@ -164,4 +164,17 @@ updateCounter();
             sec.style.transform =
                 `translate(-50%,-85%) rotate(${secrotation}deg)`
         });
+        var d = new Date();
+        var weekday = new Array(7);
+        weekday[0] = "Sun";
+        weekday[1] = "Mon";
+        weekday[2] = "Tue";
+        weekday[3] = "Wed";
+        weekday[4] = "Thu";
+        weekday[5] = "Fri";
+        weekday[6] = "Sat";
 
+    var day = weekday[d.getDay()];
+    var date= d.getDate();
+    document.getElementById("day").innerHTML = day;
+    document.getElementById("date").innerHTML = date;

@@ -250,7 +250,7 @@
     height: 50px;
     border-radius: 100%;
     padding:3px;
-    z-index: 2;
+    z-index: 4;
   }
   .ham2, #menu{
     font-size: 0px;

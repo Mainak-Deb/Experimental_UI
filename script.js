@@ -1,10 +1,10 @@
 var colors=[
   ["#ffffff","#FFCDB2","#FFB4A2","#E5989B","#B5838D","#6D6875"],
   ["#ffffff","#C7F9CC","#80ED99","#57CC99","#38A3A5","#22577A"],
-  ["#000000","#012A4A","#01497C","#2A6F97","#61A5C2","#A9D6E5"],
+  ["#ffffff","#012A4A","#01497C","#2A6F97","#61A5C2","#A9D6E5"],
   ["#ffffff","#FEFAE0","#DDA15E","#BC6C25","#606C38","#283618"],
   ["#ffffff","#FAE0E4","#F9BEC7","#FF85A1","#FF477E","#FF0A54"],
-  ["#000000","#FFEA00","#FFD000","#FFAA00","#FF9500","#FF7B00"],
+  ["#ffffff","#FFEA00","#FFD000","#FFAA00","#FF9500","#FF7B00"],
   ["#ffffff","#E9ECEF","#CED4DA","#6C757D","#495057","#212529"],
   ["#FFFFFF","#E5383B","#D90429","#A4161A","#660708","#161A1D"],
   ["#FFFFFF","#FFD166","#06D6A0","#EF476F","#118AB2","#073B4C"],
@@ -40,6 +40,8 @@ var thm = document.querySelector(':root');
 var country=document.getElementById("country");
 var meimg=document.getElementById("mepic");
 var Earth =document.getElementById("Earth");
+var welcome =document.getElementById("welcome");
+var names=document.getElementById("names");
 var invert =false;
 var col=0;
 
@@ -50,13 +52,16 @@ function toogle_invert(){
     meimg.style.setProperty('filter',  'invert(100%)');
     country.style.setProperty('filter',  'invert(100%)');
     Earth.style.setProperty('filter',  'invert(100%)');
+    welcome.style.setProperty('filter',  'invert(100%)');
+    welcome.style.borderColor="#000000"
   }else{
     invert=false;
     thm.style.setProperty('filter',  'invert(0%)');
     meimg.style.setProperty('filter',  'invert(0%)');
     country.style.setProperty('filter',  'invert(0%)');
     Earth.style.setProperty('filter',  'invert(0%)');
-
+    welcome.style.setProperty('filter',  'invert(0%)');
+    welcome.style.borderColor="white"
   }
   console.log(invert);
 }

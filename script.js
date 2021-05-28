@@ -201,4 +201,16 @@ function customcol(){
   thm.style.setProperty('--dark2', document.getElementById("colr5").value );
   thm.style.setProperty('--dark',   document.getElementById("colr6").value);
 }
+var slideIndex = 0;
 
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("bg-image");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  slides[parseInt((slideIndex-1)%5)].style.display = "block";  
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+showSlides();

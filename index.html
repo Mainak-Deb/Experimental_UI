@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="color.css">
     <link rel="stylesheet" href="grids.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="skills.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -41,7 +43,7 @@
         </div>
         <div class="grid-container">
             <div class="gridbox">
-                <div class="flex1 leftflex"  onclick="theme_set(0)" >
+                <div class="flex1 leftflex"  onclick="chngpage(0)" >
                     <span  class="navicon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
@@ -49,7 +51,7 @@
                         </svg>
                     </span>
                     Home</div>
-                <div  class="flex2 rightflex" onclick="theme_set(1)" >
+                <div  class="flex2 rightflex"   onclick="chngpage(1)"  >
                     <span  class="navicon">
                         <svg xmlns="http://www.w3.org/2000/svg"  width="26" height="26" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
                             <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -59,7 +61,7 @@
                     About</div>
             </div>
             <div class="gridbox">
-                <div class="flex2 leftflex" >
+                <div class="flex2 leftflex"   onclick="chngpage(2)" >
                     <span  class="navicon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-easel-fill" viewBox="0 0 16 16">
                             <path d="M8.473.337a.5.5 0 0 0-.946 0L6.954 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h1.85l-1.323 3.837a.5.5 0 1 0 .946.326L4.908 11H7.5v2.5a.5.5 0 0 0 1 0V11h2.592l1.435 4.163a.5.5 0 0 0 .946-.326L12.15 11H14a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H9.046L8.473.337z"/>
@@ -67,7 +69,7 @@
                     </span>
                     
                     Skills</div>
-                <div  class="flex1 rightflex" >
+                <div  class="flex1 rightflex"   onclick="chngpage(3)" >
                     <span  class="navicon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
                             <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
@@ -76,7 +78,7 @@
                     Projects</div>
             </div>
             <div class="gridbox">
-                <div class="flex1 leftflex" >
+                <div class="flex1 leftflex"   onclick="chngpage(4)" >
                     <span  class="navicon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
@@ -84,7 +86,7 @@
                           </svg>
                     </span>
                     Experience</div>
-                <div  class="flex2 rightflex" >
+                <div  class="flex2 rightflex"  onclick="chngpage(5)"  >
                     <span  class="navicon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
                             <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
@@ -101,7 +103,7 @@
                           </svg>
                     </span>
                     Themes</div>
-                <div  class="flex1 rightflex" >
+                <div  class="flex1 rightflex"   onclick="chngpage(6)" >
                     <span  class="navicon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
@@ -123,138 +125,275 @@
 <div class="pages">
     <h1 class="menu" onclick="openNav()"> <span class="ham1" style="margin: 12px  0px 0px 8px;">&#9776;</span>  <span id="menu">Menu</span> <span class="ham2">&#9776;</span></h1>
 
-    <section class="card-container">
-        <div class="card" id="namaste"> 
-            <section>
-                <h1 class="welcometext">Welcome</h1> 
-                        
-                <img src="images\Namaste.png" alt="Mainak Deb" class="welcome" id="welcome">
-                <h3 id="goodtime">Thanks for coming</h3>
-            </section> 
-        </div>
-        <div class="card" id="picture">              
-            <img src="images\mainak.png" alt="Mainak Deb" class="mypic" id="mepic">
-        </div>
-        
-        <div class="card" id="names">
-            <section>
-                <h1 id="myname">Mainak Deb</h1>
-                <div id="country">Indian </div>
-                <div class="iam" >
-                    <span style="color: rgba(53, 236, 16, 0.986);">$  </span>
-                    <span class="typing" ></span>
-                </div>
-                
+<div class="ids"  id="home">
+    <section class="card-container" id="home">
+            <div class="card" id="namaste"> 
+                <section>
+                    <h1 class="welcometext">Welcome</h1> 
                             
-                <div id="languages">
-                    <span style="color: rgba(3, 28, 75, 0.986);">$  </span>
-                    <span style="color: rgba(5, 5, 5, 0.986);"><b>Languages</b></span>
-                    <span style="color: rgba(5, 110, 1, 0.986);">=</span>
-                    <span>[ Bengali, </span>
-                    <span>English, </span>
-                    <span>Hindi ] </span>
-                </div>
-                <div id="hireme">
-                    <button class="button">Hire me</button>
-                </div>
-            </section>
-        </div>
-        <div class="card" >
-            <div class="agebar">
-              <img src="images\earth-global-svgrepo-com.svg" alt="" width="100"
-                style="position: absolute;top: 40px;left: 20px;" id="Earth"
-              >  
-              <h2  class="spent"  >I spent </h2>    
-               <h3   class="spent" style="margin-left: 120px;"> <span id="age"  style="color:var(--dark);">  </span> <span  style="color:var(--dark2);" >Years</span></h3>
-               <h2  class="spent"  style="margin-left: 100px;">on planet Earth</h2>    
+                    <img src="images\Namaste.png" alt="Mainak Deb" class="welcome" id="welcome">
+                    <h3 id="goodtime">Thanks for coming</h3>
+                </section> 
             </div>
-        </div>
-        <div class="card">
-            <section id="triangularcount">
-                <svg  width="400" height="400" class="triangle">
-                    <path d="M 6.7 1.14
-                             l 2.8 4.7
-                             s 1.3 3 -1.82 3.22
-                             l -5.4 0
-                             s -3.28 -.14 -1.74 -3.26
-                             l 2.76 -4.7
-                             s 1.7 -2.3 3.4 0
-                             z"
-                          transform="scale(27)" fill="var(--theme)" >
-                  </svg>
-                  <svg  width="200" height="200" class="triangle2">
-                    <path d="M 6.7 1.14
-                             l 2.8 4.7
-                             s 1.3 3 -1.82 3.22
-                             l -5.4 0
-                             s -3.28 -.14 -1.74 -3.26
-                             l 2.76 -4.7
-                             s 1.7 -2.3 3.4 0
-                             z"
-                          transform="scale(10)" fill="var(--light2)" >
-                  </svg>
-                  <h1 class="total" >Total</h1>
-                  <h1 class="count" ><span id="count"></span></h1>
-                  <h1 class="views" >Views</h1>
-                </section>
-        </div>
-        <div class="card" >
-                <section id="starmove">
-
-                    <div id="burst-12">
-                        <section id="timetext">
-                        
-                            <section style="transform: rotate(-60deg);position: absolute; top: 15px;left: -15px;">Wish</section>
-                            <section style="transform: rotate(-30deg);position: absolute; top: -20px;left: 25px;">you</section>
-                            <section style="transform: rotate(0deg);position: absolute; top: -30px;left: 70px;">a</section>
-                            <section style="transform: rotate(30deg);position: absolute; top: -20px;left: 100px;">good</section>
-                            <section style="transform: rotate(60deg);position: absolute; top: 18px;left: 140px;">time</section>
-   
-                        </section>
-                        <section id="daytext"><h1 style="z-index: 12;"><span id="day"></span></h1></section>
-                        <section id="datetext"><h1 style="z-index: 12;"><span id="date"></span></h1></section>
-
-                        <div class="sec"></div>
-                        <div class="min"></div>
-                        <div class="hr"></div>
+            <div class="card" id="picture">              
+                <img src="images\mainak.png" alt="Mainak Deb" class="mypic" id="mepic">
+            </div>
+            
+            <div class="card" id="names">
+                <section>
+                    <h1 id="myname">Mainak Deb</h1>
+                    <div id="country">Indian </div>
+                    <div class="iam" >
+                        <span style="color: rgba(53, 236, 16, 0.986);">$  </span>
+                        <span class="typing" ></span>
                     </div>
                     
-                    
+                                
+                    <div id="languages">
+                        <span style="color: rgba(3, 28, 75, 0.986);">$  </span>
+                        <span style="color: rgba(5, 5, 5, 0.986);"><b>Languages</b></span>
+                        <span style="color: rgba(5, 110, 1, 0.986);">=</span>
+                        <span>[ Bengali, </span>
+                        <span>English, </span>
+                        <span>Hindi ] </span>
+                    </div>
+                    <div id="hireme">
+                        <button class="button">Hire me</button>
+                    </div>
                 </section>
-        </div>
-        <div class="card" >
-            <section >
-                <div id="egg">
-                    <section style="position: absolute;top: 45px;left: 32px;">
-                    <input type="color" class="favcolor" id="colr1" value="#ff0000">
-                    <input type="color" class="favcolor" id="colr2" value="#ff0000">
-                    <input type="color" class="favcolor" id="colr3" value="#ff0000">
-                    <input type="color" class="favcolor" id="colr4" value="#ff0000">
-                    <input type="color" class="favcolor" id="colr5" value="#ff0000">
-                    <input type="color" class="favcolor" id="colr6" value="#ff0000">
-                    </section>
-                    <button onclick="customcol()"id="eggtext" >
-                        Customise colors
-                    </button>
+            </div>
+            <div class="card" >
+                <div class="agebar">
+                <img src="images\earth-global-svgrepo-com.svg" alt="" width="100"
+                    style="position: absolute;top: 40px;left: 20px;" id="Earth"
+                >  
+                <h2  class="spent"  >I spent </h2>    
+                <h3   class="spent" style="margin-left: 120px;"> <span id="age"  style="color:var(--dark);">  </span> <span  style="color:var(--dark2);" >Years</span></h3>
+                <h2  class="spent"  style="margin-left: 100px;">on planet Earth</h2>    
                 </div>
-            </section>
+            </div>
+            <div class="card">
+                <section id="triangularcount">
+                    <svg  width="400" height="400" class="triangle">
+                        <path d="M 6.7 1.14
+                                l 2.8 4.7
+                                s 1.3 3 -1.82 3.22
+                                l -5.4 0
+                                s -3.28 -.14 -1.74 -3.26
+                                l 2.76 -4.7
+                                s 1.7 -2.3 3.4 0
+                                z"
+                            transform="scale(27)" fill="var(--theme)" >
+                    </svg>
+                    <svg  width="200" height="200" class="triangle2">
+                        <path d="M 6.7 1.14
+                                l 2.8 4.7
+                                s 1.3 3 -1.82 3.22
+                                l -5.4 0
+                                s -3.28 -.14 -1.74 -3.26
+                                l 2.76 -4.7
+                                s 1.7 -2.3 3.4 0
+                                z"
+                            transform="scale(10)" fill="var(--light2)" >
+                    </svg>
+                    <h1 class="total" >Total</h1>
+                    <h1 class="count" ><span id="count"></span></h1>
+                    <h1 class="views" >Views</h1>
+                    </section>
+            </div>
+            <div class="card" >
+                    <section id="starmove">
 
-        </div>
-        <div class="card" >
-            <div id="imgscroll">
-                                    
-                <div class="bg-image img1"></div>
-                <div class="bg-image img2"></div>
-                <div class="bg-image img3"></div>
-                <div class="bg-image img4"></div>
-                <div class="bg-image img5"></div>
+                        <div id="burst-12">
+                            <section id="timetext">
+                            
+                                <section style="transform: rotate(-60deg);position: absolute; top: 15px;left: -15px;">Wish</section>
+                                <section style="transform: rotate(-30deg);position: absolute; top: -20px;left: 25px;">you</section>
+                                <section style="transform: rotate(0deg);position: absolute; top: -30px;left: 70px;">a</section>
+                                <section style="transform: rotate(30deg);position: absolute; top: -20px;left: 100px;">good</section>
+                                <section style="transform: rotate(60deg);position: absolute; top: 18px;left: 140px;">time</section>
+    
+                            </section>
+                            <section id="daytext"><h1 style="z-index: 12;"><span id="day"></span></h1></section>
+                            <section id="datetext"><h1 style="z-index: 12;"><span id="date"></span></h1></section>
+
+                            <div class="sec"></div>
+                            <div class="min"></div>
+                            <div class="hr"></div>
+                        </div>
+                        
+                        
+                    </section>
+            </div>
+            <div class="card" >
+                <section >
+                    <div id="egg">
+                        <section style="position: absolute;top: 45px;left: 32px;">
+                        <input type="color" class="favcolor" id="colr1" value="#ff0000">
+                        <input type="color" class="favcolor" id="colr2" value="#ff0000">
+                        <input type="color" class="favcolor" id="colr3" value="#ff0000">
+                        <input type="color" class="favcolor" id="colr4" value="#ff0000">
+                        <input type="color" class="favcolor" id="colr5" value="#ff0000">
+                        <input type="color" class="favcolor" id="colr6" value="#ff0000">
+                        </section>
+                        <button onclick="customcol()"id="eggtext" >
+                            Customise colors
+                        </button>
+                    </div>
+                </section>
 
             </div>
-        </div>
-        
+            <div class="card" >
+                <div id="imgscroll">
+                                        
+                    <div class="bg-image img1"></div>
+                    <div class="bg-image img2"></div>
+                    <div class="bg-image img3"></div>
+                    <div class="bg-image img4"></div>
+                    <div class="bg-image img5"></div>
 
+                </div>
+            </div>
     </section>
 </div>
+<div class="ids" id="about">about</div>
+<div class="ids" id="skills">
+    <section id="box">
+        <div id="abouthead">Skill</div>
+        <div id="aboutskill">Click on a skill to know about it</div>
+    </section> 
+    <section id="box">
+        <div class="skillhead" id="hpl" onclick="skilltoogle('pl')" >Programming Languages
+            <i class="fa fa-angle-double-down" id="downpl" style="margin-left: 30px;transform: rotate(0deg);"></i>
+        </div>
+        <div class="skillnames" id="pl"  style="display: none;">
+            <div class="programs"> 
+                <img src="images\c.svg" alt="" width="90" class="plogo">
+            </div>
+            <div class="programs">
+                <img src="images\c++.svg" alt="" width="90" class="plogo">
+            </div>
+            <div class="programs">
+                <img src="images\js.svg" alt="" width="90" class="plogo">
+            </div>
+            <div class="programs">
+                <img src="images\python.svg" alt="" width="90" class="plogo">
+            </div>
+            <div class="programs">
+                <img src="images\html.svg" alt="" width="90" class="plogo">
+            </div>
+            <div class="programs">
+                <img src="images\css.svg" alt="" width="90" class="plogo">
+            </div>
+            
+        </div>
+    </section> 
+    <section id="box">
+        <div class="skillhead"  id="hfw"  onclick="skilltoogle('fw')" >FrameWorks
+            <i class="fa fa-angle-double-down" id="downfw" style="margin-left: 30px;transform: rotate(0deg);"></i>
+        </div>
+        <div class="skillnames" id="fw" style="display: none;">
+            <div class="programs">
+                <img src="images\django.svg" alt="" width="90" class="plogo">
+            </div>
+            <div class="programs">
+                <img src="images\jquery.svg" alt="" width="90"  height="90" class="plogo">
+            </div>
+            <div class="programs">
+                <img src="images\opencv.svg" alt="" width="80" class="plogo">
+            </div>
+            <div class="programs">
+                <img src="images\p5.png" alt="" width="90" class="plogo">
+            </div>
+            <div class="programs">
+                <img src="images\pgame.png" alt="" width="90" height="90" class="plogo">
+            </div>
+            <div class="programs">
+                <img src="images\bootstrap.svg" alt="" width="90" class="plogo">   
+            </div>
+            
+        </div>
+    </section> 
+    <section id="box">
+        <div class="skillhead"  id="ht"  onclick="skilltoogle('t')" >Tools
+            <i class="fa fa-angle-double-down" id="downt" style="margin-left: 30px;transform: rotate(0deg);"></i>
+        </div>
+        <div class="skillnames" id="t"  style="display: none;">
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            
+            
+
+        </div>
+    </section> 
+    <section id="box">
+        <div class="skillhead"  id="hsk"  onclick="skilltoogle('sk')" >Soft skills
+            <i class="fa fa-angle-double-down" id="downsk" style="margin-left: 30px;transform: rotate(0deg);"></i>
+        </div>
+        <div class="skillnames" id="sk"  style="display: none;">
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+        
+
+        </div>
+    </section> 
+    <section id="box">
+        <div class="skillhead"  id="hnt"  onclick="skilltoogle('nt')" >Non-Technical
+            <i class="fa fa-angle-double-down" id="downnt" style="margin-left: 30px;transform: rotate(0deg);"></i>
+        </div>
+        <div class="skillnames" id="nt"  style="display: none;">
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+           
+
+        </div>
+    </section> 
+    <section id="box">
+        <div class="skillhead"  id="hl"  onclick="skilltoogle('l')" >
+            Languages
+            <i class="fa fa-angle-double-down" id="downl" style="margin-left: 30px;transform: rotate(0deg);"></i>
+        </div>
+        <div class="skillnames"  id="l"   style="display: none;">
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            <div class="programs"></div>
+            
+        </div>
+    </section> 
+
+</div>
+<div class="ids" id="projects">projects</div>
+<div class="ids" id="experience">experience</div>
+<div class="ids" id="achivements">achivements</div>
+<div class="ids" id="contact">contact</div>
+
+
+
+</div>
+
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 <script>

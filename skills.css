@@ -1,0 +1,80 @@
+#box{
+    -webkit-filter: drop-shadow( 4px 4px 6px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 3px 6px rgba(0, 0, 0, .7));
+    margin-bottom: 50px;
+}
+  
+
+
+#abouthead{
+    width:80%;
+    background-color: var(--mid);
+    height: 40px;
+    margin-left: 6%;
+    text-align: center;
+    border-radius: 40px 40px 0px 0px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: min(50px,10vw);
+    font-weight: 500;
+    color: var(--light);
+    text-shadow: -2px 0 var(--dark), 0 2px var(--dark), 2px 0 var(--dark), 0 -2px var(--dark);
+
+
+}
+#aboutskill{
+    width:80%;
+    background-color: var(--theme);
+    height: 150px;
+    margin-left: 6%;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.skillhead{
+    width:80%;
+    background-color: var(--dark2);
+    height: 40px;
+    margin-left: 6%;
+    text-align: center;
+    border-radius:40px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: min(40px,6vw);
+    font-weight: 500;
+    color: var(--light);
+    text-shadow: -2px 0 var(--dark), 0 2px var(--dark), 2px 0 var(--dark), 0 -2px var(--dark);
+
+
+}
+.skillnames{
+    width:80%;
+    height: auto;
+    display: none;
+    background-color: var(--theme);
+    margin-left: 6%;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 0px 0px 40px 40px;
+    overflow-x: hidden;
+    transition:  2s;
+}
+
+.skillhead:hover{
+    width:80%;
+    background-color: var(--dark) ;
+    color: var(--light2); 
+    text-shadow: none;
+}
+.programs {
+    display: inline-block;
+    margin: 2px;
+    width: 90px;
+    height: 90px;
+    background-color: var(--light2);
+    
+    border-radius: 100%;
+    border: 2px solid var(--dark2);
+   
+}

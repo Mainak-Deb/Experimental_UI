@@ -11,6 +11,17 @@ var colors=[
 
 ]
 
+var pageid=0;
+
+
+// home=document.getElementById("myNav")
+// about=document.getElementById("myNav")
+// skills=document.getElementById("myNav")
+// projects=document.getElementById("myNav")
+// experience=document.getElementById("myNav")
+// achivements=document.getElementById("myNav")
+// contact=document.getElementById("myNav")
+
 
 
 function openNav() {
@@ -222,3 +233,41 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 showSlides();
+
+
+function chngpage(x) {
+  pageid=parseInt(x);
+  hideshow();
+  closeNav();
+  
+}
+
+
+function hideshow() {
+  var i;
+  var pages = document.getElementsByClassName("ids");
+  console.log(pages)
+  console.log(pageid)
+  for (i = 0; i < pages.length; i++) {
+    pages[i].style.display = "none";  
+  }
+  pages[parseInt(pageid)].style.display = "block";  
+}
+hideshow();
+
+function skilltoogle(ids) {
+  var x = document.getElementById(ids);
+  var y = document.getElementById("down"+ids);
+  var z = document.getElementById("h"+ids);
+  console.log(ids)
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.transform="rotate(180deg)";
+    z.style.borderRadius="40px 40px 0px 0px";
+  } else {
+    x.style.display = "none";
+    y.style.transform="rotate(0deg)";
+    z.style.borderRadius="40px";
+  }
+
+}

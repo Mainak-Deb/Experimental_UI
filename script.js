@@ -79,8 +79,11 @@ function color_set() {
   thm.style.setProperty('--mid',    colors[parseInt(col)][3]);
   thm.style.setProperty('--dark2',  colors[parseInt(col)][4]);
   thm.style.setProperty('--dark',   colors[parseInt(col)][5]);
+  updatecolform();
 
 }
+
+
 
 var modal = document.getElementById("myModal");
 function open_modal(){
@@ -179,14 +182,17 @@ updateCounter();
     document.getElementById("day").innerHTML = day;
     document.getElementById("date").innerHTML = date;
 
+function updatecolform(){
+  
+  document.getElementById("colr1").value =  colors[parseInt(col)][0];
+  document.getElementById("colr2").value =  colors[parseInt(col)][1];
+  document.getElementById("colr3").value =  colors[parseInt(col)][2];
+  document.getElementById("colr4").value =  colors[parseInt(col)][3];
+  document.getElementById("colr5").value =  colors[parseInt(col)][4];
+  document.getElementById("colr6").value =  colors[parseInt(col)][5];
 
-document.getElementById("colr1").value =  colors[parseInt(col)][0];
-document.getElementById("colr2").value =  colors[parseInt(col)][1];
-document.getElementById("colr3").value =  colors[parseInt(col)][2];
-document.getElementById("colr4").value =  colors[parseInt(col)][3];
-document.getElementById("colr5").value =  colors[parseInt(col)][4];
-document.getElementById("colr6").value =  colors[parseInt(col)][5];
-
+}
+updatecolform();
 function customcol(){
   thm.style.setProperty('--theme', document.getElementById("colr1").value);
   thm.style.setProperty('--light',  document.getElementById("colr2").value); 

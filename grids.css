@@ -2,7 +2,7 @@
     position: relative;
     top: 0px;
     left: 0px;
-    width: 92vw;
+    width: 100vwvw;
     z-index: 1;
     padding: 2vw 4vw;
 }
@@ -449,13 +449,15 @@
       align-items: start;
       display: grid;
       grid-template-columns: repeat(auto-fit, 525px);
+      
+
     }
-      .card {
-        justify-content: center;
-        width: 50VW;
-        height: 350px;
-        margin:0vw 6vw 0vw 6vw;
-      }
+    .card {
+      justify-content: center;
+      width: 50VW;
+      height: 350px;
+      margin:0vw 6vw 0vw 6vw;
+    }
       
     #picture {
       background-color: var(--theme);

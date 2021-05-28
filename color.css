@@ -15,19 +15,21 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 120vw;
+    height: 120vh;
     background: linear-gradient(45deg, var(--light) 30%, var(--mid)  49%, var(--light2) 82%);
     background-size: 200%;
-    height: 100vh;
     animation: aurora 5s infinite;
     z-index: -2;
+    overflow-x: hidden;
 }
 
 .aurora-inner {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 120vw;
+    height: 120vh;
     background: radial-gradient(rgba(255, 255, 255, 0.767), #ffe9ed8c);
     background-size: 200%;
     animation: aurora 7s infinite;

@@ -42,6 +42,8 @@ var meimg=document.getElementById("mepic");
 var Earth =document.getElementById("Earth");
 var welcome =document.getElementById("welcome");
 var names=document.getElementById("names");
+var slides = document.getElementsByClassName("bg-image");
+  
 var invert =false;
 var col=0;
 
@@ -54,6 +56,9 @@ function toogle_invert(){
     Earth.style.setProperty('filter',  'invert(100%)');
     welcome.style.setProperty('filter',  'invert(100%)');
     welcome.style.borderColor="#000000"
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.setProperty('filter', 'invert(100%)');
+    }
   }else{
     invert=false;
     thm.style.setProperty('filter',  'invert(0%)');
@@ -62,6 +67,9 @@ function toogle_invert(){
     Earth.style.setProperty('filter',  'invert(0%)');
     welcome.style.setProperty('filter',  'invert(0%)');
     welcome.style.borderColor="white"
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.setProperty('filter', 'invert(0%)');
+    }
   }
   console.log(invert);
 }

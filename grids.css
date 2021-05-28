@@ -75,7 +75,6 @@
 
 .mypic:hover {
   transform: rotate(360deg);
-  width: 320px;
 }
 #myname {
   text-align: center;

@@ -32,6 +32,7 @@
     border-radius: 0px 0px 40px 40px;
 }
 
+
 .skillhead{
     width:80%;
     background-color: var(--dark2);
@@ -45,9 +46,8 @@
     font-weight: 500;
     color: var(--light);
     text-shadow: -2px 0 var(--dark), 0 2px var(--dark), 2px 0 var(--dark), 0 -2px var(--dark);
-
-
 }
+
 .skillnames{
     width:80%;
     height: auto;
@@ -61,20 +61,28 @@
     transition:  2s;
 }
 
+
+
 .skillhead:hover{
     width:80%;
     background-color: var(--dark) ;
     color: var(--light2); 
     text-shadow: none;
 }
+
 .programs {
     display: inline-block;
     margin: 2px;
     width: 90px;
     height: 90px;
-    background-color: var(--light2);
-    
     border-radius: 100%;
-    border: 2px solid var(--dark2);
-   
+    animation-name: rotate;
+    animation-iteration-count: infinite;
 }
+
+@keyframes rotate {
+    from {transform: rotate(0deg);
+       }
+    to {transform: rotate(360deg);
+       }
+  }

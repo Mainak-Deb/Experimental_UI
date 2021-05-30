@@ -11,7 +11,7 @@ var colors=[
 
 ]
 
-var pageid=0;
+var pageid=2;
 
 
 // home=document.getElementById("myNav")

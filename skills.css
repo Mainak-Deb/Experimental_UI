@@ -25,12 +25,13 @@
 #aboutskill{
     width:80%;
     background-color: var(--theme);
-    height: 150px;
+    height: auto;
     margin-left: 6%;
     text-align: center;
     padding-top: 15px;
+    padding-bottom: 15px;
     border-radius: 0px 0px 40px 40px;
-    overflow-y: scroll;
+   
 }
 
 
@@ -77,11 +78,20 @@
     width: 90px;
     height: 90px;
     border-radius: 100%;
-    animation-name: rotate;
-    animation-iteration-count: infinite;
-    cursor: pointer;
+    
 }
 
+
+.plogo{
+    transition: 1s;
+}
+
+.plogo:hover{
+    opacity: 0.5;
+    transform: rotate(360deg);
+    
+    
+}
 @keyframes rotate {
     from {transform: rotate(0deg);
        }

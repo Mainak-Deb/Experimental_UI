@@ -11,7 +11,48 @@ var colors=[
 
 ]
 
-var pageid=0;
+var pageid=2;
+
+var skillset={
+  C:"The C programming language is a computer programming language that was developed to do system programming for the operating system UNIX and is an imperative programming language. C was developed in the early 1970s by Ken Thompson and Dennis Ritchie at Bell Labs. ... C is a compiled language.",
+  Cpp:"C++ is a cross-platform language that can be used to create high-performance applications. C++ was developed by Bjarne Stroustrup, as an extension to the C language. C++ gives programmers a high level of control over system resources and memory.",
+  JavaScript:"JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.",
+  Python:"Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. ... Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse.",
+  Html:"HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.",
+  Css:"CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once.",
+  
+  Django:"Django is an open-source python web framework used for rapid development, pragmatic, maintainable, clean design, and secures websites. ... The main goal of the Django framework is to allow developers to focus on components of the application that are new instead of spending time on already developed components.",
+  Jquery:"jQuery is a lightweight, write less, do more, JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript on your website. jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.",
+  OpenCv:"OpenCV is a cross-platform library using which we can develop real-time computer vision applications. It mainly focuses on image processing, video capture and analysis including features like face detection and object detection.",
+  p5js:"p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! p5.js is free and open-source because we believe software, and the tools to learn it, should be accessible to everyone.",
+  Pygame:"Pygame is a cross-platform set of Python modules which is used to create video games. It consists of computer graphics and sound libraries designed to be used with the Python programming language.",
+  BootStrap:"Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms. Bootstrap also supports JavaScript extensions.",
+  
+  Sqlite:"SQLite is a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine. SQLite is the most widely deployed SQL database engine in the world. The source code for SQLite is in the public domain.",
+  VScode:"Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control. It aims to provide just the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to fuller featured IDEs, such as Visual Studio IDE.",
+  Qgis:"QGIS functions as geographic information system (GIS) software, allowing users to analyze and edit spatial information, in addition to composing and exporting graphical maps. QGIS supports both raster and vector layers; vector data is stored as either point, line, or polygon features.",
+  Sublime_text:"Sublime Text is a shareware cross-platform source code editor with a Python application programming interface (API). It natively supports many programming languages and markup languages, and functions can be added by users with plugins, typically community-built and maintained under free-software licenses.",
+  SpyDer:"Spyder is an open-source cross-platform integrated development environment (IDE) for scientific programming in the Python language.",
+  Colab:"Colaboratory, or “Colab” for short, is a product from Google Research. Colab allows anybody to write and execute arbitrary python code through the browser, and is especially well suited to machine learning, data analysis and education.",
+  
+  MS_Word:"Microsoft Word or MS Word (often called Word) is a graphical word processing program that users can type with. It is made by the computer company Microsoft. Its purpose is to allow users to type and save documents. Similar to other word processors, it has helpful tools to make documents.",
+  MS_Excel:"Microsoft Excel is a helpful and powerful program for data analysis and documentation. It is a spreadsheet program, which contains a number of columns and rows, where each intersection of a column and a row is a “cell.” Each cell contains one point of data or one piece of information.",
+  MS_PowerPoint:"Microsoft PowerPoint is a powerful slide show presentation program. It is a standard component of the company's Microsoft Office suite software, and is bundled together with Word, Excel, and other office productivity tools. The program uses slides to convey information rich in multimedia.",
+  Google_Docs:"Google Docs is a very powerful real-time collaboration and document authoring tool. Multiple users can edit a document at the same time, while seeing each others' changes instantaneously. Users can produce text documents, slide presentations, spreadsheets, drawings, and surveys.",
+  Google_Sheet:"Google Sheets allows users to edit, organize, and analyze different types of information. It allows collaborations, and multiple users can edit and format files in real-time, and any changes made to the spreadsheet can be tracked by a revision history.",
+  Adobe_Photoshop:"Adobe Photoshop is an imaging and graphic design software used by thousands of people in many different roles across the world. Not only is it for photos but you can use Photoshop for designing websites, editing videos, and creating 3D artwork.",
+  
+  Editing:"I love to edit pictures, i like to play with colours, contrast, object moving, removing etc.",
+  writing:"I love writing stories and articles, i love to write science fiction stories, and many type of scientific articles",
+  Photography:"I love to click photos, i like to click nature photos, potrait photos of humans, object photos and mostly meaning containg social messege photos .",
+  Painting:"Painting is one of my favourite hobby, i love painting, mostly i like opaque colors like Oio, Tempara or dry pastels, My most of the works are on pencil shading.",
+  Guitar:"I love to play guitar, I like to play tabs of various songs",
+
+  Bengali:"Bengali also known by its endonym Bangla (বাংলা Bengali pronunciation: [ˈbaŋla]), is an Indo-Aryan language and is the lingua franca of the Bengal region of the Indian subcontinent. It is the most widely spoken language of Bangladesh and the second most widely spoken of the 22 scheduled languages of India, after Hindi. With approximately 228 million native speakers and another 37 million as second language speakers,Bengali is the fifth most-spoken native language and the sixth most spoken language by total number of speakers in the world.",
+  English:"English is a West Germanic language first spoken in early medieval England, which has become the leading language of international discourse in the 21st century. It is named after the Angles, one of the ancient Germanic peoples that migrated to the area of Great Britain that later took their name, England. Both names derive from Anglia, a peninsula on the Baltic Sea. English is most closely related to Frisian and Low Saxon, while its vocabulary has been significantly influenced by other Germanic languages, particularly Old Norse (a North Germanic language), as well as Latin and French.",
+  Hindi:"Hindi or more precisely Modern Standard Hindi ,is an Indo-Aryan language spoken chiefly in India. Hindi has been described as a standardised and Sanskritised register of the Hindustani language, which itself is based primarily on the Khariboli dialect of Delhi and neighbouring areas of Northern India. Hindi, written in the Devanagari script, is one of the two official languages of the Government of India, along with the English language. It is an official language in 9 States and 3 Union Territories and an additional official language in 3 other States.Hindi is also one of the 22 scheduled languages of the Republic of India."
+}
+
 
 
 // home=document.getElementById("myNav")
@@ -54,7 +95,9 @@ var Earth =document.getElementById("Earth");
 var welcome =document.getElementById("welcome");
 var names=document.getElementById("names");
 var slides = document.getElementsByClassName("bg-image");
-  
+var logo = document.getElementsByClassName("plogo");
+
+
 var invert =false;
 var col=0;
 
@@ -69,6 +112,11 @@ function toogle_invert(){
     welcome.style.borderColor="#000000"
     for (i = 0; i < slides.length; i++) {
       slides[i].style.setProperty('filter', 'invert(100%)');
+      console.log(i);
+    }
+    for (i = 0; i < logo.length; i++) {
+      logo[i].style.setProperty('filter', 'invert(100%)');
+      console.log(i);
     }
   }else{
     invert=false;
@@ -80,10 +128,15 @@ function toogle_invert(){
     welcome.style.borderColor="white"
     for (i = 0; i < slides.length; i++) {
       slides[i].style.setProperty('filter', 'invert(0%)');
+      console.log(i);
+    }
+    for (i = 0; i < logo.length; i++) {
+      logo[i].style.setProperty('filter', 'invert(0%)');
+      console.log(i);
     }
   }
-  console.log(invert);
-}
+
+  }
 
 
 function theme_set(x) {
@@ -271,3 +324,15 @@ function skilltoogle(ids) {
   }
 
 }
+
+
+function skillabout(x) {
+      document.getElementById("abouthead").innerHTML=x;;
+      about=document.getElementById("aboutskill").innerHTML=skillset[x];
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+
+}
+
+
+

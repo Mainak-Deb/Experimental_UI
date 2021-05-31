@@ -30,6 +30,7 @@
     text-align: center;
     padding-top: 15px;
     border-radius: 0px 0px 40px 40px;
+    overflow-y: scroll;
 }
 
 
@@ -78,6 +79,7 @@
     border-radius: 100%;
     animation-name: rotate;
     animation-iteration-count: infinite;
+    cursor: pointer;
 }
 
 @keyframes rotate {

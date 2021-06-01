@@ -51,12 +51,12 @@
     color: var(--light);
     border: var(--borderwidth) solid var(--dark);
     text-shadow: -2px 0 var(--dark), 0 2px var(--dark), 2px 0 var(--dark), 0 -2px var(--dark);
+    transition: 1s;
 }
 
 .skillnames{
     width:80%;
     height: auto;
-    display: none;
     background-color: var(--theme);
     margin-left: 6%;
     text-align: center;
@@ -64,9 +64,8 @@
     padding-top: 15px;
     border-radius: 0px 0px 40px 40px;
     overflow: hidden;
-    transition:  2s;
+    
 }
-
 
 
 .skillhead:hover{
@@ -75,6 +74,10 @@
     color: var(--light2); 
     text-shadow: none;
 
+}
+
+#skills i{
+    transition: 1s;
 }
 
 .programs {

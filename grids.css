@@ -53,15 +53,15 @@
   background-color: var(--theme);
   border: var(--borderwidth) solid var(--dark);
   border-radius: 50px 0% 0% 50px;
-  box-shadow: -15px 0 8px -10px rgba(0, 0, 0, 0.2), -15px 0 20px -10px rgba(0, 0, 0, 0.19),
-              0 25px  8px -20px rgba(0, 0, 0, 0.2), 0 25px 20px -20px rgba(0, 0, 0, 0.19);
+  box-shadow: -15px 0 8px -10px var(--shadow2), -15px 0 20px -10px var(--shadow2),
+              0 25px  8px -20px var(--shadow2), 0 25px 20px -20px var(--shadow2);
 }
 #names{
   border: var(--borderwidth) solid var(--dark);
   background-color: var(--theme);
   border-radius: 0% 50px 50px 0%;
-  box-shadow:  15px 0 8px -10px rgba(0, 0, 0, 0.2), 15px 0 20px -10px rgba(0, 0, 0, 0.19),
-                 0 25px  8px -20px rgba(0, 0, 0, 0.2), 0 25px 20px -20px rgba(0, 0, 0, 0.19);
+  box-shadow:  15px 0 8px -10px var(--shadow2), 15px 0 20px -10px var(--shadow2),
+                 0 25px  8px -20px var(--shadow2), 0 25px 20px -20px var(--shadow2);
 
 }
 
@@ -179,15 +179,15 @@
   transition: transform .7s ease-in-out;
   transition: transform .7s ease-in-out;
   background-color: var(--light);
-  box-shadow:  -25px 0 8px -20px rgba(0, 0, 0, 0.2), -25px 0 20px -20px rgba(0, 0, 0, 0.19),
-                25px 0 8px -20px rgba(0, 0, 0, 0.2), 25px 0 20px -20px rgba(0, 0, 0, 0.19),
-                 0 25px  8px -20px rgba(0, 0, 0, 0.2), 0 25px 20px -20px rgba(0, 0, 0, 0.19);
+  box-shadow:  -20px 0 8px -20px var(--shadow2), -20px 0 20px -20px var(--shadow2),
+                20px 0 8px -20px var(--shadow2), 20px 0 20px -20px var(--shadow2),
+                 0 20px  8px -20px var(--shadow2), 0 20px 20px -20px var(--shadow2);
 
 }
 #namaste{
   
-  -webkit-filter: drop-shadow( 4px 4px 6px rgba(0, 0, 0, .7));
-  filter: drop-shadow( 3px 3px 6px rgba(0, 0, 0, .7));
+  -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow2));
+  filter: drop-shadow( 3px 3px 6px var(--shadow2));
 }
 .welcometext{
   text-align: center;
@@ -215,9 +215,9 @@
   border-radius: 40px;
   border: 10px solid var(--theme);
   text-shadow: -1px 0 var(--dark), 0 1px var(--dark), 1px 0 var(--dark), 0 -1px var(--dark);
-  box-shadow:  -25px 0 8px -20px rgba(0, 0, 0, 0.2), -25px 0 20px -20px rgba(0, 0, 0, 0.19),
-  25px 0 8px -20px rgba(0, 0, 0, 0.2), 25px 0 20px -20px rgba(0, 0, 0, 0.19),
-   0 25px  8px -20px rgba(0, 0, 0, 0.2), 0 25px 20px -20px rgba(0, 0, 0, 0.19);
+  box-shadow:  -25px 0 8px -20px var(--shadow2), -25px 0 20px -20px var(--shadow2),
+  25px 0 8px -20px var(--shadow2), 25px 0 20px -20px var(--shadow2),
+   0 25px  8px -20px var(--shadow2), 0 25px 20px -20px var(--shadow2);
   
 }
 

@@ -33,6 +33,28 @@
     </div>
 </div>
 
+
+<div id="editModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" style="overflow: hidden;" >
+        <section id="shadowpart">
+            <span class="close"  onclick="close_editmodal()">&times;</span>
+            <h1 id="borderchngheader" >Border Width</h1>
+            <div  class="editslidebox">
+                <input type="range" min="0" max="6" value="0" class="editslider" id="editRange" onchange="bordermanipulate()" >
+            </div>
+        </section>
+
+        <section id="shadowpart">
+            <h1 id="borderchngheader" style="top:240px; ">Shadow toogle</h1>
+            <div  class="editslidebox" style="top: 306px;">
+                <input type="range" min="0" max="100" value="50" class="editslider" id="shadowRange" onchange="shadowmanipulate()" >
+            </div>
+        </section>
+    </div>
+    </div>
+</div>
+
     
 <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -228,7 +250,10 @@
             <div class="card" >
                 <section >
                     <div id="egg">
-                        <section style="position: absolute;top: 45px;left: 32px;">
+                        <button  id="eggtext" >
+                            Customise colors
+                        </button>
+                        <section style="position: absolute;top: 60px;left: 32px;" onchange="customcol()" >
                         <input type="color" class="favcolor" id="colr1" value="#ff0000">
                         <input type="color" class="favcolor" id="colr2" value="#ff0000">
                         <input type="color" class="favcolor" id="colr3" value="#ff0000">
@@ -236,8 +261,8 @@
                         <input type="color" class="favcolor" id="colr5" value="#ff0000">
                         <input type="color" class="favcolor" id="colr6" value="#ff0000">
                         </section>
-                        <button onclick="customcol()"id="eggtext" >
-                            Customise colors
+                        <button  id="eggedit"   onclick="open_editmodal()">
+                           <img src="images\edit.png" alt="" width="25px">  
                         </button>
                     </div>
                 </section>

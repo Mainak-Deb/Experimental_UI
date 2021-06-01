@@ -10,7 +10,10 @@
     --dark2:#B5838D;
     --light2:#FFB4A2;
     --mid:#E5989B;
+    --borderwidth: 0px;
+    --shadow: rgba(0, 0, 0, 0.5);
 }
+
 .aurora-outer {
     position: fixed;
     top: 0;
@@ -74,4 +77,6 @@ div {
     color: white;
 }
 
-
+.borderwidth{
+    border: var(--borderwidth) solid var(--dark);
+}

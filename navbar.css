@@ -62,8 +62,9 @@
   transform: translate(-50%);
   background-color:  var(--light2);
   border-radius: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
+  border: var(--borderwidth) solid var(--dark);
+  -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+  filter: drop-shadow( 3px 3px 6px var(--shadow));  
 }
 
 .slidecontainer {
@@ -80,14 +81,15 @@
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  border: var(--borderwidth) solid var(--dark);
+  -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+  filter: drop-shadow( 3px 3px 6px var(--shadow));
 }
 
 .slider:hover {
   opacity: 1;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-
+  -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+  filter: drop-shadow( 3px 3px 6px var(--shadow));
 }
 
 .slider::-webkit-slider-thumb {
@@ -97,13 +99,16 @@
   height: 45px;
   background:  var(--dark2);
   cursor: pointer;
+  border: var(--borderwidth) solid var(--dark);
   border-radius: 50%;
+
 }
 
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
   background: #B5838D;
+  border: var(--borderwidth) solid var(--dark);
   cursor: pointer;
 }
 
@@ -133,24 +138,26 @@
     background-color: var(--mid);
     height: 60px;
     border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    border: var(--borderwidth) solid var(--dark);
+    -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+    filter: drop-shadow( 3px 3px 6px var(--shadow));
 }
 
 .flex2{
   background-color: var(--dark2);
   border-radius: 30px;
   height: 60px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  border: var(--borderwidth) solid var(--dark);
+  -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+  filter: drop-shadow( 3px 3px 6px var(--shadow));
 }
 
 .flex1:hover 
 {
   background-color: var(--dark);
   color: var(--theme);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-
+  -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+  filter: drop-shadow( 3px 3px 6px var(--shadow));
 
 }
 
@@ -158,8 +165,8 @@
 {
   background-color: var(--dark);
   color: var(--theme);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-
+  -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+  filter: drop-shadow( 3px 3px 6px var(--shadow));
 
 }
 
@@ -199,6 +206,8 @@
   width: 60%;
   height: 60%;
   overflow-y: scroll;
+  border: var(--borderwidth) solid var(--dark);
+
   border-radius: 40px;
   
 
@@ -210,6 +219,7 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+
 }
 
 .close:hover,
@@ -231,6 +241,8 @@
     border-radius: 30px;
     background-color: var(--dark); 
     color:var(--light2);
+    border: var(--borderwidth) solid var(--dark);
+
 }
 
 .modalgrid {

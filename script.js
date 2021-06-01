@@ -336,4 +336,30 @@ function skillabout(x) {
 }
 
 
+var editmodal = document.getElementById("editModal");
+function open_editmodal(){
+  editmodal.style.display = "block";
+}
+
+function close_editmodal(){
+  editmodal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == editmodal) {
+    editmodal.style.display = "none";
+  }
+}
+
+function bordermanipulate(){
+  var brcg=document.getElementById("editRange").value;
+  thm.style.setProperty('--borderwidth', String(brcg)+"px");
+}
+
+function shadowmanipulate(){
+  var sdcg=document.getElementById("shadowRange").value;
+  console.log("rgba(0, 0, 0,"+String(sdcg/100)+")")
+  thm.style.setProperty('--shadow',"rgba(0, 0, 0, "+String(sdcg/100)+")");
+}
+
 

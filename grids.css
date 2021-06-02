@@ -1,16 +1,22 @@
+body{
+  overflow: hidden;
+
+}
 .pages  {
     position: relative;
     top: 0px;
     left: 0px;
-    width: 100vwvw;
+    width: 100vw;
+    padding-top: 2vh;
     z-index: 1;
-    padding: 2vw 4vw;
+    overflow-x: hidden;
 }
 
 .card-container {
 	align-items: start;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 350px);
+  
 }
 
 .card {
@@ -29,7 +35,7 @@
     width: 20vw;
     padding:8px;
     text-align: center;
-    margin: 0vw 45vw 2vw  35vw;
+    margin: 0vw 40vw 2vw  38vw;
     border-radius: 30px;
     background-color: var(--light2);
     color: var(--dark);
@@ -587,9 +593,9 @@
   background-color: var(--dark2);
  }
  
-
-
-
+.ids{
+  margin-left: 4vw;
+}
 
 
 
@@ -644,19 +650,22 @@
       height: 350px;
       margin:0vw 6vw 0vw 6vw;
     }
-      
+    
+   .ids{
+    margin: 0px;
+  }   
     #picture {
       background-color: var(--theme);
       border-radius: 50px 50px 0% 0% ;
-      box-shadow: -25px 0 8px -20px rgba(0, 0, 0, 0.2), -25px 0 20px -20px rgba(0, 0, 0, 0.19),
-                  25px 0 8px -20px rgba(0, 0, 0, 0.2), 25px 0 20px -20px rgba(0, 0, 0, 0.19);
+      box-shadow: -25px 0 8px -20px  var(--shadow2), -25px 0 20px -20px  var(--shadow2),
+                  25px 0 8px -20px  var(--shadow2), 25px 0 20px -20px  var(--shadow2);
     }
     #names{
       background-color: var(--theme);
       border-radius: 0% 0% 50px 50px;
-      box-shadow:  -25px 0 8px -20px rgba(0, 0, 0, 0.2), -25px 0 20px -20px rgba(0, 0, 0, 0.19),
-                    25px 0 8px -20px rgba(0, 0, 0, 0.2), 25px 0 20px -20px rgba(0, 0, 0, 0.19),
-                    0 25px  8px -20px rgba(0, 0, 0, 0.2), 0 25px 20px -20px rgba(0, 0, 0, 0.19);
+      box-shadow:  -25px 0 8px -20px  var(--shadow2), -25px 0 20px -20px  var(--shadow2),
+                    25px 0 8px -20px  var(--shadow2), 25px 0 20px -20px  var(--shadow2),
+                    0 25px  8px -20px  var(--shadow2), 0 25px 20px -20px  var(--shadow2);
 
     }
 }
@@ -685,7 +694,9 @@
   .ham2, #menu{
     font-size: 0px;
   }
-    
+   .ids{
+     margin: 0px;
+   } 
   .card {
     justify-content: center;
     width: 88VW;
@@ -701,15 +712,15 @@
 #picture {
   background-color: var(--theme);
   border-radius: 50px 50px 0% 0% ;
-  box-shadow: -25px 0 8px -20px rgba(0, 0, 0, 0.2), -25px 0 20px -20px rgba(0, 0, 0, 0.19),
-              25px 0 8px -20px rgba(0, 0, 0, 0.2), 25px 0 20px -20px rgba(0, 0, 0, 0.19);
+  box-shadow: -25px 0 8px -20px var(--shadow2), -25px 0 20px -20px  var(--shadow2),
+              25px 0 8px -20px  var(--shadow2), 25px 0 20px -20px  var(--shadow2);
 }
 #names{
   background-color: var(--theme);
   border-radius: 0% 0% 50px 50px;
-  box-shadow:  -25px 0 8px -20px rgba(0, 0, 0, 0.2), -25px 0 20px -20px rgba(0, 0, 0, 0.19),
-                25px 0 8px -20px rgba(0, 0, 0, 0.2), 25px 0 20px -20px rgba(0, 0, 0, 0.19),
-                 0 25px  8px -20px rgba(0, 0, 0, 0.2), 0 25px 20px -20px rgba(0, 0, 0, 0.19);
+  box-shadow:  -25px 0 8px -20px  var(--shadow2), -25px 0 20px -20px  var(--shadow2),
+                25px 0 8px -20px  var(--shadow2), 25px 0 20px -20px  var(--shadow2),
+                 0 25px  8px -20px  var(--shadow2), 0 25px 20px -20px  var(--shadow2);
 
 }
 }

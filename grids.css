@@ -595,6 +595,8 @@ body{
  
 .ids{
   margin-left: 4vw;
+  margin-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 
@@ -695,7 +697,8 @@ body{
     font-size: 0px;
   }
    .ids{
-     margin: 0px;
+    margin-left: 2vw;
+    padding-bottom: 100px;
    } 
   .card {
     justify-content: center;

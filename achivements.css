@@ -1,0 +1,111 @@
+.middlebutton  {
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: 90px;
+    background-color: var(--dark2);
+    text-align: center;
+    border-radius: 40px;
+    color: #ffffff;
+    font-size: max(2vw,15px);
+    padding: 5px;
+    margin:0% 20% 0% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+    filter: drop-shadow( 3px 3px 6px var(--shadow));
+    border: var(--borderwidth) solid var(--dark);
+    cursor: pointer;
+}
+.midspan{
+    background-color: var(--mid);
+    width: 95%;
+    display: inline;
+    margin: 5px;
+    border: var(--borderwidth) solid var(--dark);
+    border-radius: 40px;
+}
+
+.midspan:hover{
+    background-color: var(--light2);
+}
+
+.chngbox{
+    display: block;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    margin:0% 20% 0% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+}
+.achivedbox{
+    height:auto;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+    filter: drop-shadow( 3px 3px 6px var(--shadow));
+    border: var(--borderwidth) solid var(--dark);
+    margin-bottom: 40px;
+
+}
+.achivedhead{
+    text-align: center;
+    font-size: max(3vw,25px);
+    color: var(--light);
+    border: var(--borderwidth) solid var(--dark);
+    text-shadow: -2px 0 var(--dark), 0 2px var(--dark), 2px 0 var(--dark), 0 -2px var(--dark);
+    padding: 10px 0px 10px 0px;
+}
+
+.achivedtext{
+    font-size: max(1vw,11px);
+    font-weight: 150;
+    margin: 10px;
+}
+
+.achivedimg{
+    width: 85%;
+    height: auto;
+}
+
+.achivedverify{
+   text-align: center; 
+}
+.verify:link, .verify:visited {
+    background-color: var(--mid);
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: max(1.5vw,20px);
+    margin: 10px;
+    border-radius: 20px;
+    border: var(--borderwidth) solid var(--dark);
+  }
+  
+  .verify:hover, .verify:active {
+    background-color: var(--dark2);
+  }
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {        
+    .midspan{
+        background-color: var(--mid);
+        width: 98%;
+        padding: 5px;
+    }
+
+}

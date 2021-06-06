@@ -11,7 +11,7 @@ var colors=[
 
 ]
 
-var pageid= 5;
+var pageid= 0;
 
 var skillset={
   C:"The C programming language is a computer programming language that was developed to do system programming for the operating system UNIX and is an imperative programming language. C was developed in the early 1970s by Ken Thompson and Dennis Ritchie at Bell Labs. ... C is a compiled language.",
@@ -352,7 +352,7 @@ window.onclick = function(event) {
 
 function bordermanipulate(){
   var brcg=document.getElementById("editRange").value;
-  thm.style.setProperty('--borderwidth', String(brcg)+"px");
+  thm.style.setProperty('--borderwidth', String(brcg/10)+"px");
 }
 
 function shadowmanipulate(){

@@ -95,7 +95,16 @@
     background-color: var(--dark2);
   }
 
-
+.downblock{
+    height:200px;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+    filter: drop-shadow( 3px 3px 6px var(--shadow));
+    border: var(--borderwidth) solid var(--dark);
+    margin-bottom: 40px;
+}
 
 
 

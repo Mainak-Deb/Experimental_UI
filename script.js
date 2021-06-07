@@ -361,4 +361,15 @@ function shadowmanipulate(){
   thm.style.setProperty('--shadow2',"rgba(0, 0, 0, "+String(sdcg/250)+")");
 }
 
-
+function achivetoogle(c) {
+  var x = document.getElementById("myachivements");
+  var y = document.getElementById("mycertificates");
+  console.log(c)
+  if (c == 1) {
+    x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+  }
+}

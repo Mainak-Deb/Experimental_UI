@@ -53,6 +53,26 @@ var skillset={
   Hindi:"Hindi or more precisely Modern Standard Hindi ,is an Indo-Aryan language spoken chiefly in India. Hindi has been described as a standardised and Sanskritised register of the Hindustani language, which itself is based primarily on the Khariboli dialect of Delhi and neighbouring areas of Northern India. Hindi, written in the Devanagari script, is one of the two official languages of the Government of India, along with the English language. It is an official language in 9 States and 3 Union Territories and an additional official language in 3 other States.Hindi is also one of the 22 scheduled languages of the Republic of India."
 }
 
+var aText = new Array(
+  "Hello Sir! I am Mainak deb,", 
+  "Currently i am a 2nd year student of Computer science Engineering", 
+  "i am a self taught developper",
+  "I love coding, & creating new thing,",
+  "I usually spends my more hours on the internet" ,
+  "And My area of interest are Web Development and Designing," ,
+  "Front End and Back-end Development" ,
+  "and how to tweak software" ,
+  "i love to know how teach stuffs works",
+  "and also how to make this",
+  "I like to develop ideas how the website works and sometimes develop this.",
+  "I love visualising thing, so i made many visualizing tools in python & Js",
+  "I made many games using Python & JS",
+  "I am fond of reading articles speatially tech related",
+  "I like to except new challenges",
+  "Also i love painting, photography and photoshop",
+  "thank you"
+    
+  );
 
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
@@ -366,27 +386,6 @@ function achivetoogle(c) {
 }
 
 
-// set up text to print, each item in array is new line
-var aText = new Array(
-  "Hello Sir! I am Mainak deb,", 
-  "Currently i am a 2nd year student of Computer science Engineering", 
-  "i am a self taught developper",
-  "I love coding, & creating new thing,",
-  "I usually spends my more hours on the internet" ,
-  "And My area of interest are Web Development and Designing," ,
-  "Front End and Back-end Development" ,
-  "and how to tweak software" ,
-  "i love to know how teach stuffs works",
-  "and also how to make this",
-  "I like to develop ideas how the website works and sometimes develop this.",
-  "I love visualising thing, so i made many visualizing tools in python & Js",
-  "I made many games using Python & JS",
-  "I am fond of reading articles speatially tech related",
-  "I like to except new challenges",
-  "Also i love painting, photography and photoshop",
-  "thank you"
-    
-  );
   var iSpeed = 30; // time delay of print out
   var iIndex = 0; // start printing array at this position
   var iArrLength = aText[1].length; // the length of the text array
@@ -420,6 +419,9 @@ var aText = new Array(
   }
   function restart_typewrite(){
     iIndex=0;
+    var iScrollAt = 20; 
+    var iTextPos = 0;
+    typewriter();
   }
   typewriter();
 

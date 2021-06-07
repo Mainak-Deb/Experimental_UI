@@ -35,7 +35,7 @@ body{
     width: 20vw;
     padding:8px;
     text-align: center;
-    margin: 0vw 40vw 2vw  38vw;
+    margin: 2vw 40vw 2vw  38vw;
     border-radius: 30px;
     background-color: var(--light2);
     color: var(--dark);

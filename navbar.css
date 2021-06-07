@@ -10,7 +10,7 @@
     background-color: rgba(255,255,255,0);
     backdrop-filter: blur(.8rem);
     overflow-y: scroll;
-    transition: 1s;
+    transition: 0.5s;
   }
   
   .overlay-content {

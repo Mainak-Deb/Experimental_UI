@@ -54,17 +54,6 @@ var skillset={
 }
 
 
-
-// home=document.getElementById("myNav")
-// about=document.getElementById("myNav")
-// skills=document.getElementById("myNav")
-// projects=document.getElementById("myNav")
-// experience=document.getElementById("myNav")
-// achivements=document.getElementById("myNav")
-// contact=document.getElementById("myNav")
-
-
-
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
   }
@@ -373,3 +362,62 @@ function achivetoogle(c) {
     y.style.display = "block";
   }
 }
+
+
+// set up text to print, each item in array is new line
+var aText = new Array(
+  "Hello Sir! I am Mainak deb,", 
+  "Currently i am a 2nd year student of Computer science Engineering", 
+  "i am a self taught developper",
+  "I love coding, & creating new thing,",
+  "I usually spends my more hours on the internet" ,
+  "And My area of interest are Web Development and Designing," ,
+  "Front End and Back-end Development" ,
+  "and how to tweak software" ,
+  "i love to know how teach stuffs works",
+  "and also how to make this",
+  "I like to develop ideas how the website works and sometimes develop this.",
+  "I love visualising thing, so i made many visualizing tools in python & Js",
+  "I made many games using Python & JS",
+  "I am fond of reading articles speatially tech related",
+  "I like to except new challenges",
+  "Also i love painting, photography and photoshop",
+  "thank you"
+    
+  );
+  var iSpeed = 30; // time delay of print out
+  var iIndex = 0; // start printing array at this position
+  var iArrLength = aText[1].length; // the length of the text array
+  var iScrollAt = 20; // start scrolling up at this many lines
+   
+  var iTextPos = 0; // initialise text position
+  var sContents = ''; // initialise contents variable
+  var iRow; // initialise current row
+   
+  function typewriter()
+  {
+   sContents =  ' ';
+   iRow = Math.max(0, iIndex-iScrollAt);
+   var destination = document.getElementById("screen");
+   
+   while ( iRow < iIndex ) {
+    sContents += `<p><span class="newliner">  >>> </span><span class="font">`+aText[iRow++] + `</span></p><br />`;
+   }
+   destination.innerHTML = sContents +'<p><span class="newliner">  >>> </span> <span class="font">'+ aText[iIndex].substring(0, iTextPos) + `<span class="newliner">_</span></span></p>`;
+   if ( iTextPos++ == iArrLength ) {
+    iTextPos = 0;
+    iIndex++;
+    if ( iIndex != aText.length ) {
+     iArrLength = aText[iIndex].length;
+     setTimeout("typewriter()", 100);
+    }
+   } else {
+    setTimeout("typewriter()", iSpeed);
+   }
+  }
+  
+  
+  typewriter();
+
+
+

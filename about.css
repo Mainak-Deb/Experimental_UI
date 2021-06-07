@@ -1,0 +1,121 @@
+.midallign{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin:0% 10% 0% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* border: 1px solid black; */
+}
+.terminalbox{
+    width: 100%;
+    -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+    filter: drop-shadow( 3px 3px 6px var(--shadow));
+    border: var(--borderwidth) solid var(--dark);
+    border-radius: 20px;
+}
+#head {
+    font-family: monospace;
+    color: #fff;
+    margin: auto;
+    padding: 35px;
+    font-size: 40px;
+    text-align: center;
+}
+#bar {
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    background-color: #DAD9D9;
+    margin: 0 auto;
+    font-family: monospace;
+    padding: auto;
+    float: none;
+    border-radius: 20px 20px 0px 0px;
+}
+#red {
+    background-color: #E94B35;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -47%;
+    bottom: -20%;
+    position:relative;
+}
+#yellow {
+    background-color: #f0f000;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -44%;
+    bottom: 40%;
+    position:relative;
+    display: block;
+}
+#green {
+    background-color: #1AAF5C;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -41%;
+    bottom: 99%;
+    position:relative;
+    display: block;
+}
+#screen {
+    background-color: var(--dark);
+    width: 100%;
+    height: 600px;
+    border-radius: 0px 0px 20px 20px;
+    margin: 0 auto;
+    padding: 1px;
+    text-align: left;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: left;
+    position: static;
+    font-weight: 500px;
+    overflow: hidden;
+}
+.font {
+    color: var(--light);
+    font-family: monospace;
+    text-align: left;
+    position: static;
+}
+.newliner{
+    color: rgb(0, 255, 0);
+    font-family: monospace;
+}
+
+
+
+@media screen and (max-width: 800px) {        
+    .midspan{
+        background-color: var(--mid);
+        width: 98%;
+        padding: 5px;
+    }
+    #red{
+        left: -44%;
+    }
+    #yellow{
+        left: -37%;
+    }
+    #green{
+        left: -30%;
+    }
+    #screen {
+        font-size: 12px;
+        font-weight: 500px;
+    }
+    #screen p{
+        margin-top: -1px;
+    }
+}

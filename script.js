@@ -281,6 +281,8 @@ function chngpage(x) {
   pageid=parseInt(x);
   hideshow();
   closeNav();
+  if(x==1) {restart_typewrite();}
+
   
 }
 
@@ -396,6 +398,7 @@ var aText = new Array(
    
   function typewriter()
   {
+    
    sContents =  ' ';
    iRow = Math.max(0, iIndex-iScrollAt);
    var destination = document.getElementById("screen");
@@ -415,9 +418,11 @@ var aText = new Array(
     setTimeout("typewriter()", iSpeed);
    }
   }
-  
-  
+  function restart_typewrite(){
+    iIndex=0;
+  }
   typewriter();
+
 
 
 

@@ -379,12 +379,16 @@ function achivetoogle(c) {
   if (c == 1) {
     x.style.display = "block";
     y.style.display = "none";
+    document.getElementById("midspanleft").style.backgroundColor="var(--light2)";
+    document.getElementById("midspanright").style.backgroundColor="var(--mid)";
+
   } else {
     x.style.display = "none";
     y.style.display = "block";
-  }
+    document.getElementById("midspanright").style.backgroundColor="var(--light2)";
+    document.getElementById("midspanleft").style.backgroundColor="var(--mid)";
 }
-
+}
 
   var iSpeed = 30; // time delay of print out
   var iIndex = 0; // start printing array at this position

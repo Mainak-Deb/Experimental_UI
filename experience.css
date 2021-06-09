@@ -10,16 +10,20 @@
     padding-bottom: 60px;
     /* border: 1px solid black; */
 }
-@media (max-width: 1100px) {
-    .midallign2 {
-      flex-direction: column;
-    }
-  }
+  
+.card-container2 {
+	align-items: start;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 450px);
+  
+}
+
+
   .signboard {
       width: 400px;
-      height: 300px;
-      margin-left: 40px;
-      margin-right: 40px;
+      height: 400px;
+      margin-left: 60px;
+      margin-right: 60px;
       margin-bottom: 60px;
       position: relative;
       animation: swinging 1.5s ease-in-out infinite alternate;
@@ -28,12 +32,12 @@
   
   .sign {
       width: 100%;
-      height: 200px;
-      background: burlywood;
+      height: 300px;
+      background: var(--light2);
       border-radius: 15px;
       position: absolute;
       bottom: 0;
-      font-size: 70px;
+      font-size: 30px;
       color: saddlebrown;
       font-family: serif;
       font-weight: bold;
@@ -46,7 +50,7 @@
   .strings {
       width: 150px;
       height: 150px;
-      border: 5px solid brown;
+      border: 5px solid var(--dark2);
       position: absolute;
       border-right: none;
       border-bottom: none;
@@ -63,13 +67,15 @@
   }
   
   .pin.top {
-      background: gray;
-      left: 187px;
+        width: 25px;
+        height: 25px;
+        background: gray;
+        left: 187px;
   }
   
   .pin.left,
   .pin.right {
-      background: brown;
+      background: var(--dark2);
       top: 110px;
       box-shadow: 0 2px 0 rgba(255, 255, 255, 0.3);
   }
@@ -81,7 +87,25 @@
   .pin.right {
     left: 300px;
   }
+  .companyname{
+        padding: 0px;
+        height: 80px;
+  }
   
+  .myrole{
+    padding: 0px;
+    height: 60px;
+      
+  }
+  .timeperiod{
+    padding: 0px;
+    height: 50px;
+    font-size: 20px;
+    
+ }
+
+
+
   @keyframes swinging {
       from {
           transform: rotate(10deg);
@@ -91,4 +115,25 @@
           transform: rotate(-10deg);
       }
   }
+
+
+  @media (max-width: 800px) {
+     
+    .signboard {
+      width: 400px;
+      height: 300px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 60px;
+      position: relative;
+      animation: swinging 1.5s ease-in-out infinite alternate;
+      transform-origin: 200px 13px;
+    }
+    
+  .signboard {
+    width: 400px;
+    height: 400px;
+    }
+  
+}
   

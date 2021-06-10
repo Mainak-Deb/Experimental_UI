@@ -11,7 +11,7 @@ var colors=[
 
 ]
 
-var pageid= 4;
+var pageid= 3;
 
 var skillset={
   C:"The C programming language is a computer programming language that was developed to do system programming for the operating system UNIX and is an imperative programming language. C was developed in the early 1970s by Ken Thompson and Dennis Ritchie at Bell Labs. ... C is a compiled language.",
@@ -52,7 +52,11 @@ var skillset={
   English:"English is a West Germanic language first spoken in early medieval England, which has become the leading language of international discourse in the 21st century. It is named after the Angles, one of the ancient Germanic peoples that migrated to the area of Great Britain that later took their name, England. Both names derive from Anglia, a peninsula on the Baltic Sea. English is most closely related to Frisian and Low Saxon, while its vocabulary has been significantly influenced by other Germanic languages, particularly Old Norse (a North Germanic language), as well as Latin and French.",
   Hindi:"Hindi or more precisely Modern Standard Hindi ,is an Indo-Aryan language spoken chiefly in India. Hindi has been described as a standardised and Sanskritised register of the Hindustani language, which itself is based primarily on the Khariboli dialect of Delhi and neighbouring areas of Northern India. Hindi, written in the Devanagari script, is one of the two official languages of the Government of India, along with the English language. It is an official language in 9 States and 3 Union Territories and an additional official language in 3 other States.Hindi is also one of the 22 scheduled languages of the Republic of India."
 }
-
+videoarray=[
+  "tgbNymZ7vqY",
+  "CT0WEq3G8QU",
+  "9zbQ6HX79Mc"
+]
 var aText = new Array(
   "Hello Sir! I am Mainak deb,", 
   "Currently i am a 2nd year student of Computer science Engineering", 
@@ -429,6 +433,10 @@ function achivetoogle(c) {
   }
   typewriter();
 
-
+function fetchvideo(x){
+  console.log(videoarray[x])
+  document.getElementById("monitorvideo").innerHTML=`<iframe width="100%" height="100%"
+  src="https://www.youtube.com/embed/` +videoarray[x]+`"></iframe>`;
+}
 
 

@@ -28,6 +28,9 @@
       position: relative;
       animation: swinging 1.5s ease-in-out infinite alternate;
     transform-origin: 200px 13px;
+    -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+        filter: drop-shadow( 3px 3px 6px var(--shadow));
+       
   }
   
   .sign {
@@ -45,6 +48,7 @@
       line-height: 200px;
       text-shadow: 0 2px 0 rgba(255, 255, 255, 0.3),
                   0 -2px 0 rgba(0, 0, 0, 0.7);
+      border: var(--borderwidth) solid var(--dark);          
   }
   
   .strings {
@@ -64,6 +68,7 @@
       height: 25px;
       border-radius: 50%;
       position: absolute;
+      border: var(--borderwidth) solid var(--dark);
   }
   
   .pin.top {

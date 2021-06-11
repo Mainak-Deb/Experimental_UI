@@ -21,7 +21,6 @@
     transform: scale(1.5);
     -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
     filter: drop-shadow( 3px 3px 6px var(--shadow));
-    border: var(--borderwidth) solid var(--dark);
   }
   
   .computercontainer > .screen {
@@ -269,7 +268,7 @@
   .projectcard{
       width: 450px;
       height: 300px;
-      background-color: rgb(255, 255, 255);
+      background-color: var(--light);
       margin-bottom: 40px;
       border-radius: 40px;
       -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));

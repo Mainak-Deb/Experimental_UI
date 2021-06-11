@@ -11,7 +11,7 @@ var colors=[
 
 ]
 
-var pageid= 0;
+var pageid= 1;
 
 var skillset={
   C:"The C programming language is a computer programming language that was developed to do system programming for the operating system UNIX and is an imperative programming language. C was developed in the early 1970s by Ken Thompson and Dennis Ritchie at Bell Labs. ... C is a compiled language.",
@@ -113,43 +113,61 @@ var logo = document.getElementsByClassName("plogo");
 
 var invert =false;
 var col=0;
+var negative=0;
+// function toogle_invert(){
+//   if(invert==false){
+//     invert=true;
+//     thm.style.setProperty('filter',  'invert(100%)');
+//     meimg.style.setProperty('filter',  'invert(100%)');
+//     country.style.setProperty('filter',  'invert(100%)');
+//     Earth.style.setProperty('filter',  'invert(100%)');
+//     welcome.style.setProperty('filter',  'invert(100%)');
+//     welcome.style.borderColor="#000000"
+//     for (i = 0; i < slides.length; i++) {
+//       slides[i].style.setProperty('filter', 'invert(100%)');
+//       console.log(i);
+//     }
+//     for (i = 0; i < logo.length; i++) {
+//       logo[i].style.setProperty('filter', 'invert(100%)');
+//       console.log(i);
+//     }
+//   }else{
+//     invert=false;
+//     thm.style.setProperty('filter',  'invert(0%)');
+//     meimg.style.setProperty('filter',  'invert(0%)');
+//     country.style.setProperty('filter',  'invert(0%)');
+//     Earth.style.setProperty('filter',  'invert(0%)');
+//     welcome.style.setProperty('filter',  'invert(0%)');
+//     welcome.style.borderColor="white"
+//     for (i = 0; i < slides.length; i++) {
+//       slides[i].style.setProperty('filter', 'invert(0%)');
+//       console.log(i);
+//     }
+//     for (i = 0; i < logo.length; i++) {
+//       logo[i].style.setProperty('filter', 'invert(0%)');
+//       console.log(i);
+//     }
+//   }
+
+//   }
 
 function toogle_invert(){
-  if(invert==false){
-    invert=true;
-    thm.style.setProperty('filter',  'invert(100%)');
-    meimg.style.setProperty('filter',  'invert(100%)');
-    country.style.setProperty('filter',  'invert(100%)');
-    Earth.style.setProperty('filter',  'invert(100%)');
-    welcome.style.setProperty('filter',  'invert(100%)');
-    welcome.style.borderColor="#000000"
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.setProperty('filter', 'invert(100%)');
-      console.log(i);
+    if(negative==0){
+      negative=5;
+      thm.style.setProperty('--auroralowtone', "rgba(0, 0, 0, 0.767)" );
+      thm.style.setProperty('--aurorahightone',"#1f1f1f8c");
+    }else{
+      negative=0;
+      thm.style.setProperty('--auroralowtone', "rgba(255, 255, 255, 0.767)" );
+      thm.style.setProperty('--aurorahightone',"#f7f7f78c");
     }
-    for (i = 0; i < logo.length; i++) {
-      logo[i].style.setProperty('filter', 'invert(100%)');
-      console.log(i);
-    }
-  }else{
-    invert=false;
-    thm.style.setProperty('filter',  'invert(0%)');
-    meimg.style.setProperty('filter',  'invert(0%)');
-    country.style.setProperty('filter',  'invert(0%)');
-    Earth.style.setProperty('filter',  'invert(0%)');
-    welcome.style.setProperty('filter',  'invert(0%)');
-    welcome.style.borderColor="white"
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.setProperty('filter', 'invert(0%)');
-      console.log(i);
-    }
-    for (i = 0; i < logo.length; i++) {
-      logo[i].style.setProperty('filter', 'invert(0%)');
-      console.log(i);
-    }
-  }
 
-  }
+    
+    color_set();
+    
+
+}
+
 
 
 function theme_set(x) {
@@ -158,12 +176,13 @@ function theme_set(x) {
 }
 
 function color_set() {
-  thm.style.setProperty('--theme',  colors[parseInt(col)][0]);
-  thm.style.setProperty('--light',  colors[parseInt(col)][1]); 
-  thm.style.setProperty('--light2', colors[parseInt(col)][2]);
-  thm.style.setProperty('--mid',    colors[parseInt(col)][3]);
-  thm.style.setProperty('--dark2',  colors[parseInt(col)][4]);
-  thm.style.setProperty('--dark',   colors[parseInt(col)][5]);
+  thm.style.setProperty('--theme',  colors[parseInt(col)][Math.abs(negative-0)]);
+  thm.style.setProperty('--light',  colors[parseInt(col)][Math.abs(negative-1)]); 
+  thm.style.setProperty('--light2', colors[parseInt(col)][Math.abs(negative-2)]);
+  thm.style.setProperty('--mid',    colors[parseInt(col)][Math.abs(negative-3)]);
+  thm.style.setProperty('--dark2',  colors[parseInt(col)][Math.abs(negative-4)]);
+  thm.style.setProperty('--dark',   colors[parseInt(col)][Math.abs(negative-5)]);
+ 
   updatecolform();
 
 }
@@ -225,56 +244,56 @@ function updateCounter(){
 updateCounter();
  // Selecting all of the css classes 
         // on which we want to apply functionalities
-        const hr = document.querySelector('.hr')
-        const min = document.querySelector('.min')
-        const sec = document.querySelector('.sec')
-  
-        // Setting up the period of working
-        setInterval(() => {
-  
-            // Extracting the current time 
-            // from DATE() function
-            let day = new Date()
-            let hour = day.getHours()
-            let minutes = day.getMinutes()
-            let seconds = day.getSeconds()
-  
-            // Formula that is explained above for 
-            // the rotation of different hands
-            let hrrotation = (30 * hour) + (0.5 * minutes);
-            let minrotation = 6 * minutes;
-            let secrotation = 6 * seconds;
-  
-            hr.style.transform =
-                `translate(-50%,-100%) rotate(${hrrotation}deg)`
-            min.style.transform =
-                `translate(-50%,-100%) rotate(${minrotation}deg)`
-            sec.style.transform =
-                `translate(-50%,-85%) rotate(${secrotation}deg)`
-        });
-        var d = new Date();
-        var weekday = new Array(7);
-        weekday[0] = "Sun";
-        weekday[1] = "Mon";
-        weekday[2] = "Tue";
-        weekday[3] = "Wed";
-        weekday[4] = "Thu";
-        weekday[5] = "Fri";
-        weekday[6] = "Sat";
+const hr = document.querySelector('.hr')
+const min = document.querySelector('.min')
+const sec = document.querySelector('.sec')
 
-    var day = weekday[d.getDay()];
-    var date= d.getDate();
-    document.getElementById("day").innerHTML = day;
-    document.getElementById("date").innerHTML = date;
+// Setting up the period of working
+setInterval(() => {
+
+    // Extracting the current time 
+    // from DATE() function
+    let day = new Date()
+    let hour = day.getHours()
+    let minutes = day.getMinutes()
+    let seconds = day.getSeconds()
+
+    // Formula that is explained above for 
+    // the rotation of different hands
+    let hrrotation = (30 * hour) + (0.5 * minutes);
+    let minrotation = 6 * minutes;
+    let secrotation = 6 * seconds;
+
+    hr.style.transform =
+        `translate(-50%,-100%) rotate(${hrrotation}deg)`
+    min.style.transform =
+        `translate(-50%,-100%) rotate(${minrotation}deg)`
+    sec.style.transform =
+        `translate(-50%,-85%) rotate(${secrotation}deg)`
+});
+var d = new Date();
+var weekday = new Array(7);
+weekday[0] = "Sun";
+weekday[1] = "Mon";
+weekday[2] = "Tue";
+weekday[3] = "Wed";
+weekday[4] = "Thu";
+weekday[5] = "Fri";
+weekday[6] = "Sat";
+
+var day = weekday[d.getDay()];
+var date= d.getDate();
+document.getElementById("day").innerHTML = day;
+document.getElementById("date").innerHTML = date;
 
 function updatecolform(){
   
-  document.getElementById("colr1").value =  colors[parseInt(col)][0];
-  document.getElementById("colr2").value =  colors[parseInt(col)][1];
-  document.getElementById("colr3").value =  colors[parseInt(col)][2];
-  document.getElementById("colr4").value =  colors[parseInt(col)][3];
-  document.getElementById("colr5").value =  colors[parseInt(col)][4];
-  document.getElementById("colr6").value =  colors[parseInt(col)][5];
+  document.getElementById("colr1").value =  colors[parseInt(col)][Math.abs(negative-0)];
+  document.getElementById("colr2").value =  colors[parseInt(col)][Math.abs(negative-1)];
+  document.getElementById("colr3").value =  colors[parseInt(col)][Math.abs(negative-2)];
+  document.getElementById("colr4").value =  colors[parseInt(col)][Math.abs(negative-3)];
+  document.getElementById("colr5").value =  colors[parseInt(col)][Math.abs(negative-4)];
+  document.getElementById("colr6").value =  colors[parseInt(col)][Math.abs(negative-5)];
 
 }
 updatecolform();

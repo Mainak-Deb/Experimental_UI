@@ -8,6 +8,7 @@
     align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-bottom: 50px;
     /* border: 1px solid black; */
 }
 .terminalbox{
@@ -93,300 +94,96 @@
     color: rgb(0, 255, 0);
     font-family: monospace;
 }
-
-.ipad{
+.divideabout{
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    margin-top: 150px;
-    margin-top: 80px;
-    transform: scale(1.4);
+    margin: auto;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+.showscreen{
+    width: 70%;
+    height: 400px;
+    background-color: var(--theme);
+    border-radius: 40px 0px 0px 40px;
+    border: 2px solid black;
+}
+.showbutton{
+    width: 30%;
+    height:  400px;
+    background-color: var(--light2);
+    border-radius: 0px 40px 40px 0px;
+    border: 2px solid black;
+    padding-top: 2px;
+
+}
+.aboutbutton{
+    width: 95%;
+    height: 14%;
+    border-radius: 40px;
+    background-color: var(--mid);
+    margin:2.5px 0px 2.5px 0px;
+    border: 4px solid var(--dark);  
+    color: var(--theme);
+    font-size: max(25px,2vw);
 }
 
-.iphone-6 {
-    display: inline-block;
-    font-size: 5px;
-    margin: 20em;
-    position: relative;
-    width: 62.5em;
-    height: 111.167em;
-    padding: 0.334em;
-    box-sizing: content-box;
-    border-radius: 9.5em;
-  }
-  
-  .iphone-6::before {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 3em;
-    width: 1em;
-    top: -6em;
-    left: -4.333em;
-    border-radius: 20%;
-  }
-  
-  .iphone-6::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100%;
-    height: 2em;
-    width: 2em;
-    top: -13.333em;
-    left: calc(50% - 1em);
-  }
-  
-  .iphone-6.white{
-    border-top: 16em solid #f8f8f8;
-    border-bottom: 14.5em solid #f5f5f5;
-    border-left: 2.5em solid #f8f8f8;
-    border-right: 2.5em solid #f5f5f5;
-    background: #e5e5e5;
-    box-shadow: 0 0 0 0.667em #fcfcfc,
-                0 0 0 0.8em #d9dbdc, 
-                0 0 1.667em 0.667em rgba(252, 252, 252, 0.5), 
-                0 0 1.667em 0.667em #fcfcfc,
-                0 0 0 1.667em #d9dbdc, 
-                0 0 0 2em #bbb, 
-                0 0 5.333em 2em rgba(0, 0, 0, 0.1), 
-                inset 0 0 0 0.334em #888;
-  }
-  
-  .iphone-6.white::before {
-    background: #cbcbcb;
-    box-shadow: 0 120em #cbcbcb,
-                70.667em 0 #cbcbcb, 
-                70.667em 120em #cbcbcb, 
-                -1em 7em #b0b0b0, 
-                -1em 8em #b0b0b0, 
-                -1em 10em #b0b0b0, 
-                -1em 20em #b0b0b0, 
-                -1em 21em #b0b0b0, 
-                -1em 23em #b0b0b0, 
-                -1em 24em #b0b0b0, 
-                -1em 26em #b0b0b0, 
-                -1em 28em #b0b0b0, 
-                -1em 33.333em #b0b0b0, 
-                -1em 34em #b0b0b0, 
-                -1em 36em #b0b0b0, 
-                -1em 37em #b0b0b0, 
-                -1em 39em #b0b0b0, 
-                -1em 41em #b0b0b0, 
-                71.667em 20em #b0b0b0, 
-                71.667em 21em #b0b0b0, 
-                71.667em 23em #b0b0b0, 
-                71.667em 24em #b0b0b0, 
-                71.667em 26em #b0b0b0, 
-                71.667em 28em #b0b0b0;
-  }
-  
-  .iphone-6.white::after {
-    background: #3c3d3d;
-    box-shadow: -12em 5em 0 -0.667em rgba(100, 100, 255, 0.5),
-                -11em 5.333em 1em -0.5em rgba(255, 255, 255, 0.3),
-                -11.333em 5em 0 0 #3c3d3d, 
-                -11.333em 5em 0 0.333em #555, 
-                -5.333em 5em 0 -0.333em #3c3d3d, 
-                -5em 5em 0 -0.333em #3c3d3d, 
-                -4.667em 5em 0 -0.333em #3c3d3d, 
-                -4.333em 5em 0 -0.333em #3c3d3d, 
-                -4em 5em 0 -0.333em #3c3d3d, 
-                -3.667em 5em 0 -0.333em #3c3d3d, 
-                -3.333em 5em 0 -0.333em #3c3d3d, 
-                -3em 5em 0 -0.333em #3c3d3d, 
-                -2.667em 5em 0 -0.333em #3c3d3d, 
-                -2.333em 5em 0 -0.333em #3c3d3d, 
-                -2em 5em 0 -0.333em #3c3d3d, 
-                -1.667em 5em 0 -0.333em #3c3d3d, 
-                -1.333em 5em 0 -0.333em #3c3d3d, 
-                -1em 5em 0 -0.333em #3c3d3d, 
-                -0.667em 5em 0 -0.333em #3c3d3d, 
-                -0.333em 5em 0 -0.333em #3c3d3d, 
-                0 5em 0 -0.333em #3c3d3d, 
-                0.333em 5em 0 -0.333em #3c3d3d, 
-                0.667em 5em 0 -0.333em #3c3d3d, 
-                1em 5em 0 -0.333em #3c3d3d, 
-                1.333em 5em 0 -0.333em #3c3d3d, 
-                1.667em 5em 0 -0.333em #3c3d3d, 
-                2em 5em 0 -0.333em #3c3d3d, 
-                2.333em 5em 0 -0.333em #3c3d3d, 
-                2.667em 5em 0 -0.333em #3c3d3d, 
-                3em 5em 0 -0.333em #3c3d3d, 
-                3.333em 5em 0 -0.333em #3c3d3d, 
-                3.667em 5em 0 -0.333em #3c3d3d,
-                4em 5em 0 -0.333em #3c3d3d, 
-                4.333em 5em 0 -0.333em #3c3d3d, 
-                4.667em 5em 0 -0.333em #3c3d3d, 
-                5em 5em 0 -0.333em #3c3d3d, 
-                5.333em 5em 0 -0.333em #3c3d3d, 
-                -5.667em 5.333em 0 -0.333em #e0e0e0,
-                -5.333em 5.333em 0 -0.333em #e0e0e0, 
-                -5em 5.333em 0 -0.333em #e0e0e0, 
-                -4.667em 5.333em 0 -0.333em #e0e0e0, 
-                -4.333em 5.333em 0 -0.333em #e0e0e0, 
-                -4em 5.333em 0 -0.333em #e0e0e0, 
-                -3.667em 5.333em 0 -0.333em #e0e0e0, 
-                -3.333em 5.333em 0 -0.333em #e0e0e0, 
-                -3em 5.333em 0 -0.333em #e0e0e0, 
-                -2.667em 5.333em 0 -0.333em #e0e0e0, 
-                -2.333em 5.333em 0 -0.333em #e0e0e0, 
-                -2em 5.333em 0 -0.333em #e0e0e0, 
-                -1.667em 5.333em 0 -0.333em #e0e0e0, 
-                -1.333em 5.333em 0 -0.333em #e0e0e0, 
-                -1em 5.333em 0 -0.333em #e0e0e0, 
-                -0.667em 5.333em 0 -0.333em #e0e0e0, 
-                -0.333em 5.333em 0 -0.333em #e0e0e0, 
-                0 5.333em 0 -0.333em #e0e0e0, 
-                0.333em 5.333em 0 -0.333em #e0e0e0, 
-                0.667em 5.333em 0 -0.333em #e0e0e0, 
-                1em 5.333em 0 -0.333em #e0e0e0, 
-                1.333em 5.333em 0 -0.333em #e0e0e0, 
-                1.667em 5.333em 0 -0.333em #e0e0e0, 
-                2em 5.333em 0 -0.333em #e0e0e0, 
-                2.333em 5.333em 0 -0.333em #e0e0e0, 
-                2.667em 5.333em 0 -0.333em #e0e0e0, 
-                3em 5.333em 0 -0.333em #e0e0e0, 
-                3.333em 5.333em 0 -0.333em #e0e0e0, 
-                3.667em 5.333em 0 -0.333em #e0e0e0,
-                4em 5.333em 0 -0.333em #e0e0e0, 
-                4.333em 5.333em 0 -0.333em #e0e0e0,  
-                4.667em 5.333em 0 -0.333em #e0e0e0, 
-                5em 5.333em 0 -0.333em #e0e0e0,  
-                0 132em 2em 3em #f8f8f8, 
-                0 132em 0 4em #eee, 
-                0 132em 0 4.75em rgba(170, 170, 170, 0.4), 
-                3em 129em 0 3em #f5f5f5, 
-                0 126em 0 0em #f5f5f5, 
-                -3em 129em 0 3em #f5f5f5, 
-                0 132em 0 4.75em #aaaaaa, 
-                -0.333em 132.333em 0 4.667em #e0e0e0, 
-                -0.667em 132.667em 0 4.667em #f0f0f0;
-  }
-  
-  .iphone-6.white.landscape {
-    border-left: 16em solid #f8f8f8;
-    border-right: 14.5em solid #f5f5f5;
-    border-bottom: 2.5em solid #f5f5f5;
-    border-top: 2.5em solid #f8f8f8;
-    width: 111.167em;
-    height: 62.5em;
-  }
-  
-  .iphone-6.white.landscape::before {
-    height: 1em;
-    width: 3em;
-    left: -6em;
-    top: -4.333em;
-    box-shadow: 120em 0 #cbcbcb,
-                0 70.667em #cbcbcb, 
-                120em 70.667em #cbcbcb, 
-                7em 71.667em #b0b0b0, 
-                8em 71.667em #b0b0b0, 
-                10em 71.667em #b0b0b0, 
-                20em -1em #b0b0b0, 
-                21em -1em #b0b0b0, 
-                23em -1em #b0b0b0, 
-                24em -1em #b0b0b0, 
-                26em -1em #b0b0b0, 
-                28em -1em #b0b0b0, 
-                33.333em 71.667em #b0b0b0, 
-                34em 71.667em #b0b0b0, 
-                36em 71.667em #b0b0b0, 
-                37em 71.667em #b0b0b0, 
-                39em 71.667em #b0b0b0, 
-                41em 71.667em #b0b0b0, 
-                20em 71.667em #b0b0b0, 
-                21em 71.667em #b0b0b0, 
-                23em 71.667em #b0b0b0, 
-                24em 71.667em #b0b0b0, 
-                26em 71.667em #b0b0b0, 
-                28em 71.667em #b0b0b0;
-  }
-  
-  .iphone-6.white.landscape::after {  
-    left: -13.333em;
-    top: 31.333em;
-    box-shadow: 4.667em 11.667em 0 -0.667em rgba(100, 100, 255, 0.5),
-                5.333em 11em 1em -0.5em rgba(255, 255, 255, 0.3),
-                5em 11.333em 0 0 #3c3d3d, 
-                5em 11.333em 0 0.333em #555, 
-                5em -5.333em 0 -0.333em #3c3d3d, 
-                5em -5em 0 -0.333em #3c3d3d, 
-                5em -4.667em 0 -0.333em #3c3d3d, 
-                5em -4.333em 0 -0.333em #3c3d3d, 
-                5em -4em 0 -0.333em #3c3d3d, 
-                5em -3.667em 0 -0.333em #3c3d3d, 
-                5em -3.333em 0 -0.333em #3c3d3d, 
-                5em -3em 0 -0.333em #3c3d3d, 
-                5em -2.667em 0 -0.333em #3c3d3d, 
-                5em -2.333em 0 -0.333em #3c3d3d, 
-                5em -2em 0 -0.333em #3c3d3d, 
-                5em -1.667em 0 -0.333em #3c3d3d, 
-                5em -1.333em 0 -0.333em #3c3d3d, 
-                5em -1em 0 -0.333em #3c3d3d, 
-                5em -0.667em 0 -0.333em #3c3d3d, 
-                5em -0.333em 0 -0.333em #3c3d3d, 
-                5em 0 0 -0.333em #3c3d3d, 
-                5em 0.333em 0 -0.333em #3c3d3d, 
-                5em 0.667em 0 -0.333em #3c3d3d, 
-                5em 1em 0 -0.333em #3c3d3d, 
-                5em 1.333em 0 -0.333em #3c3d3d, 
-                5em 1.667em 0 -0.333em #3c3d3d, 
-                5em 2em 0 -0.333em #3c3d3d, 
-                5em 2.333em 0 -0.333em #3c3d3d, 
-                5em 2.667em 0 -0.333em #3c3d3d, 
-                5em 3em 0 -0.333em #3c3d3d, 
-                5em 3.333em 0 -0.333em #3c3d3d, 
-                5em 3.667em 0 -0.333em #3c3d3d,
-                5em 4em 0 -0.333em #3c3d3d, 
-                5em 4.333em 0 -0.333em #3c3d3d, 
-                5em 4.667em 0 -0.333em #3c3d3d, 
-                5em 5em 0 -0.333em #3c3d3d, 
-                5em 5.333em 0 -0.333em #3c3d3d,
-                5.333em -5.333em 0 -0.333em #e0e0e0, 
-                5.333em -5em 0 -0.333em #e0e0e0, 
-                5.333em -4.667em 0 -0.333em #e0e0e0, 
-                5.333em -4.333em 0 -0.333em #e0e0e0, 
-                5.333em -4em 0 -0.333em #e0e0e0, 
-                5.333em -3.667em 0 -0.333em #e0e0e0, 
-                5.333em -3.333em 0 -0.333em #e0e0e0, 
-                5.333em -3em 0 -0.333em #e0e0e0, 
-                5.333em -2.667em 0 -0.333em #e0e0e0, 
-                5.333em -2.333em 0 -0.333em #e0e0e0, 
-                5.333em -2em 0 -0.333em #e0e0e0, 
-                5.333em -1.667em 0 -0.333em #e0e0e0, 
-                5.333em -1.333em 0 -0.333em #e0e0e0, 
-                5.333em -1em 0 -0.333em #e0e0e0, 
-                5.333em -0.667em 0 -0.333em #e0e0e0, 
-                5.333em -0.333em 0 -0.333em #e0e0e0, 
-                5.333em 0 0 -0.333em #e0e0e0, 
-                5.333em 0.333em 0 -0.333em #e0e0e0, 
-                5.333em 0.667em 0 -0.333em #e0e0e0, 
-                5.333em 1em 0 -0.333em #e0e0e0, 
-                5.333em 1.333em 0 -0.333em #e0e0e0, 
-                5.333em 1.667em 0 -0.333em #e0e0e0, 
-                5.333em 2em 0 -0.333em #e0e0e0, 
-                5.333em 2.333em 0 -0.333em #e0e0e0, 
-                5.333em 2.667em 0 -0.333em #e0e0e0, 
-                5.333em 3em 0 -0.333em #e0e0e0, 
-                5.333em 3.333em 0 -0.333em #e0e0e0, 
-                5.333em 3.667em 0 -0.333em #e0e0e0,
-                5.333em 4em 0 -0.333em #e0e0e0, 
-                5.333em 4.333em 0 -0.333em #e0e0e0,  
-                5.333em 4.667em 0 -0.333em #e0e0e0, 
-                5.333em 5em 0 -0.333em #e0e0e0, 
-                5.333em 5.333em 0 -0.333em #e0e0e0, 
-                5.333em 5.667em 0 -0.333em #e0e0e0,			  
-                132em 0 2em 3em #f8f8f8, 
-                132em 0 0 4em #eee, 
-                132em 0 0 4.75em rgba(170, 170, 170, 0.4), 
-                135em -3em 0 3em #f5f5f5, 
-                132em -6em 0 0em #f5f5f5, 
-                129em -3em 0 3em #f5f5f5, 
-                132em 0 0 4.75em #aaaaaa, 
-                131.667em 0.333em 0 4.667em #e0e0e0, 
-                131.333em 0.667em 0 4.667em #f0f0f0;
-  }
-  
+.aboutbutton:hover{
+    background-color: var(--dark);
+    margin:2.5px 0px 2.5px 0px;
+    border: 4px solid var(--mid);
+    color: var(--theme); 
+    cursor: pointer;
+    }
+.inshow{
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    border-radius: 40px 0px 0px 40px;
+    margin-top: 10px;
+}
+.showscreen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px 0px 0px 40px;
+}
+.showscreen iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px 0px 0px 40px;
+} 
+.myaboutpic{
+    width: 50%;
+    float: left;
+}
+
+#myaboutdata{
+    width: 50%;
+    float: right;
+    font-size: 25px;
+}
+
+#myaboutdata section{
+    width: 100%;
+    height: 20%;
+    padding: 20px;
+}
+
+.aboutwhat{
+    color: var(--mid);
+    
+}
+.aboutthis{
+    color: var(--dark);
+    
+}
+
+
+
+
+
+
 @media screen and (max-width: 800px) {        
     .midspan{
         background-color: var(--mid);
@@ -409,34 +206,65 @@
     #screen p{
         margin-top: -1px;
     }
- 
-}
-
-@media screen and (max-width: 1000px) {       
-   
-    .ipad{
-        width: 100%;
-        margin-top: 150px;
-        margin-top: 40px;
-        transform: rotate(90deg);
         
+    .divideabout{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
+        filter: drop-shadow( 3px 3px 6px var(--shadow));
+        border: var(--borderwidth) solid var(--dark);
+    }
+    .showscreen{
+        width: 100%;
+        height: 600px;
+        background-color: var(--theme);
+        border-radius: 40px 40px 0px 0px;
+        border: 2px solid black;
+    }
+    .showbutton{
+        width: 100%;
+        height:  300px;
+        padding-top: 0px;
+        background-color: var(--light2);
+        border-radius: 0px 0px 40px 40px;
+        border: 2px solid black;
+
+    }
+    .inshow{
+        border-radius: 40px 40px 0px 0px;
+    }
+    .showscreen img{
+        width: 100%;
+        height: 100%;
+        border-radius: 40px 40px 0px 0px;
     }
     
-.iphone-6 {
-    display: inline-block;
-    font-size: 5px;
-    margin: 10em;
-    position: relative;
-    width: 62.5em;
-    height: 111.167em;
-    padding: 0.334em;
-    box-sizing: content-box;
-    border-radius: 9.5em;
-  }
-  
+    .showscreen iframe{
+        width: 100%;
+        height: 100%;
+        border-radius: 40px 40px 0px 0px;
+    }
+    
+.myaboutpic{
+    width: 100%;
+    margin: auto;
 }
 
+#myaboutdata{
+    width: 100%;
+    float: right;
+    font-size: 20px;
+    text-align: 20px;
+}
 
+#myaboutdata section{
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+}
 
-
-
+}

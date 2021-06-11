@@ -296,15 +296,48 @@
                 <p class="font"> <span style="color: red;"    >May be there is a problem !please reload the page</span> </p>
             </div>
         </section>
-        <section class='ipad' >
-                <div class="iphone-6 white landscape">
-                    <h1>Device.css - Pure CSS devices!</h1>
-                    <span>This iPhone 6 is made completely using CSS out of a single DIV block. It can be scaled with <b>font-size</b> style and any content can be put inside it to be displayed on screen.</span>
-            <span>Check out other devices in <a href="https://codepen.io/waterplea/pen/jPqBdr">this pen</a>. If you want to use it, visit <a href="https://famer.github.io/device.css/">GitHub</a> for CSS. Works in every modern browser starting from <b>IE10.</b></span>
-            <span>Check out iPad Mini 3 below. You can embed things inside these devices like I did with my music in Bandcamp player. I would appreciate if you give it a listen while you're here!
-            </div>
-        
-        </section>
+        <div class="divideabout" >
+          <div  class="showscreen">
+            <section class="inshow" id="aboutcountry" style="display: block;">
+                <img src="images/india-me.jpeg"  alt="">
+            </section>
+            <section class="inshow" id="aboutstate" style="display: none;">
+                <img src="images/west bengal me 2.jpeg"  alt="">
+            </section>
+            <section class="inshow" id="aboutlanguage" style="display: none;">
+                <img src="images/bengali-01.jpeg"  alt="">
+            </section>
+            <section class="inshow" id="aboutlocation" style="display: none;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29452.060741554455!2d88.32293282178921!3d22.67214064840922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89cc322ff039d%3A0x6a4393d3b8c42a8a!2sUttarpara%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1623425948502!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+            <section class="inshow" id="aboutme" style="display: none;">
+                <span class="myaboutpic" >
+                    <img src="images/bengali_attire.png" style="width: 50%;float: left;" alt="">
+                </span>
+                <span class="imshowme" id="myaboutdata" >
+                    <section ><span class="aboutwhat">Height:</span><span class="aboutthis"> 5'9"</span></section><hr>
+                    <section ><span class="aboutwhat">Weight:</span><span class="aboutthis"> 80kg</span></section><hr>
+                    <section ><span class="aboutwhat">Age:</span><span id="aboutage" class="aboutthis"> 0</span></section><hr>
+                    <section ><span class="aboutwhat">Hair color:</span><span id="aboutage" class="aboutthis"> Black</span></section><hr>
+                    <section ><span class="aboutwhat">Eye color:</span><span id="aboutage" class="aboutthis"> Black</span></section>
+                </span>
+            </section>
+            <section class="inshow" id="abouthobby" style="display: none;">
+                <section>Drawing</section>
+                <section>Photography</section>
+            </section>
+
+
+          </div>
+          <div  class="showbutton">
+              <section class="aboutbutton" onclick="changeabout('aboutcountry')">My Countery</section>
+              <section class="aboutbutton" onclick="changeabout('aboutstate')">State</section>
+              <section class="aboutbutton" onclick="changeabout('aboutlanguage')">Language</section>
+              <section class="aboutbutton" onclick="changeabout('aboutlocation')">Location</section>
+              <section class="aboutbutton" onclick="changeabout('aboutme')">My data</section>
+              <section class="aboutbutton" onclick="changeabout('abouthobby')">Hobby</section>
+          </div>
+        </div>
     </div>
 
 

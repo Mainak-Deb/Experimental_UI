@@ -137,7 +137,7 @@
 .flex1{
     background-color: var(--mid);
     height: 60px;
-    border-radius: 30px;
+    border-radius: 15px;
     border: var(--borderwidth) solid var(--dark);
     -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
     filter: drop-shadow( 3px 3px 6px var(--shadow));
@@ -145,7 +145,7 @@
 
 .flex2{
   background-color: var(--dark2);
-  border-radius: 30px;
+  border-radius: 15px;
   height: 60px;
   border: var(--borderwidth) solid var(--dark);
   -webkit-filter: drop-shadow( 4px 4px 6px var(--shadow));
@@ -275,11 +275,11 @@
     margin-top: 25px;
   }
   .flex1{
-    border-radius: 40px;
+    border-radius: 30px;
     height: 80px;
   }
   .flex2{
-    border-radius: 40px;
+    border-radius: 30px;
     height: 80px;
   }
   .leftflex{
